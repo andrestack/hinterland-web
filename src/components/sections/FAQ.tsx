@@ -32,11 +32,11 @@ import {
       ...props,
     } as Props;
     return (
-      <section className="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-32">
+      <section className="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-24">
         <div className="container mx-auto max-w-lg">
           <div className="mb-12 text-center md:mb-18 lg:mb-20">
             <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h2>
-            <p className="md:text-md">{description}</p>
+            <p className="md:text-md text-xl">{description}</p>
           </div>
           <Accordion type="multiple" className="grid items-start justify-stretch gap-4">
             {questions.map((question, index) => (
@@ -49,7 +49,7 @@ import {
                   icon={
                     <RxPlus className="size-7 shrink-0 p-1 text-text-primary transition-transform duration-300 md:size-8" />
                   }
-                  className="md:py-5 md:text-md text-left [&[data-state=open]>svg]:rotate-45"
+                  className="md:py-5 md:text-md text-lg text-left [&[data-state=open]>svg]:rotate-45"
                 >
                   {question.title}
                 </AccordionTrigger>
@@ -61,11 +61,13 @@ import {
             <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
               {footerHeading}
             </h4>
-            <p className="md:text-md">{footerDescription}</p>
+            <p className="md:text-md text-xl">{footerDescription}</p>
+            <a href="https://tidycal.com/silvandre/15-minute-meeting" target="_blank">
             <div className="mt-6 md:mt-8">
               <Button {...button} >{button.title}</Button>
               {/* <BtnLink href="https://tidycal.com/silvandre/15-minute-meeting" text="Book a Free Discovery Call" variant="primary" className="lg:text-2xl sm:text-xl shadow-lg shadow-box-shadow"/> */}
             </div>
+            </a>
           </div>
         </div>
       </section>
@@ -106,7 +108,7 @@ import {
           "Yes, we offer ongoing support and maintenance services starting at $100 per year. This includes website hosting, content update, and regular checks to ensure your site continues to perform optimally."},
     ],
     footerHeading: "Still have questions?",
-    footerDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    footerDescription: "Let's figure out the answers together!",
     button: {
       title: "Get in touch",
       
