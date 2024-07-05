@@ -12,5 +12,5 @@ export default defineConfig({
       noExternal: ['react-icons'],
     },
   },
-  site: "https://www.hinterlandweb.com",
+  site: "https://hinterlandweb.com",
 });
