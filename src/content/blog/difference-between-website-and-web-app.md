@@ -14,7 +14,7 @@
 }
 ---
 
-In today's digital landscape, the terms "web application" and "website" are often used interchangeably, but they represent distinct concepts in the world wide web. This article will delve into the key differences between websites and web apps, helping you understand which solution best fits your online presence needs. Whether you're a business owner, a developer, or simply curious about web technologies, this comprehensive guide will provide valuable insights into the world of web development.
+In today's digital landscape, the terms "web application" and "website" are often used interchangeably, but they represent distinct concepts in the world wide web. This article will delve into the key differences between websites and web apps, helping you understand which solution best fits your online presence needs. Whether you're a business owner, a developer, or simply curious about web technologies, this comprehensive guide will provide valuable insights into the world of web development. And if you are unsure if you still need a website at all, make sure to check our other blog article [__here__](https://hinterlandweb.com/blog/do-i-need-a-website/).
 
 ## 1. What Exactly is a Web Application?
 

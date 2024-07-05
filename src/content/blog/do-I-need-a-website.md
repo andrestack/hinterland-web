@@ -50,7 +50,7 @@ This is often an overlooked advantage of having a website: the superior quality 
 
 Websites offer several unique advantages:
 
-- Complete customization of you business needs: Tailor your online presence to perfectly reflect your brand.
+- Complete customization of your business needs: You can tailor your online presence to perfectly reflect your brand. 
 - In-depth content: Share detailed information about your products, services, or expertise.
 - E-commerce capabilities: Sell products directly to customers without intermediaries.
 - Data ownership: Collect and analyze visitor data to inform your business decisions.
@@ -61,6 +61,8 @@ Perhaps most importantly, websites allow you to create a seamless user experienc
 By providing valuable information and clear calls-to-action on your website, you can nurture these leads effectively, guiding them through your sales funnel. This level of lead qualification and nurturing is difficult to achieve solely through social media or third-party platforms, making your website an invaluable tool for generating high-quality leads that are more likely to convert into customers.
 
 Your website plays a crucial role in building and maintaining brand awareness. It serves as a consistent representation of your brand online, showcasing your logo, colours, and overall aesthetic. Through quality content and effective brand storytelling, you can communicate your brand's values, mission, and unique selling propositions.
+
+And also, you can take your website even further by scalling it to a full blown web application. that allpw your clients to log-in and interact with a specific product or service you are offering, for example, an online course, a habit tracker or a budgeting tool. If you are unsure what a web application really is, make sure to read [__this other article__](https://hinterlandweb.com/blog/difference-between-website-and-web-app/) on our blog.
 
 ## How can I get a website?
 
