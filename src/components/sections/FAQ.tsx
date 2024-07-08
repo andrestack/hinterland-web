@@ -25,7 +25,7 @@ import {
   };
   
   export type Faq4Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
-  
+  // <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
   export const Faq4 = (props: Faq4Props) => {
     const { heading, description, questions, footerHeading, footerDescription, button } = {
       ...Faq4Defaults,
@@ -35,7 +35,7 @@ import {
       <section className="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-24">
         <div className="container mx-auto max-w-lg">
           <div className="mb-12 text-center md:mb-18 lg:mb-20">
-            <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h2>
+            <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">{heading}</h1>
             <p className="md:text-md text-xl">{description}</p>
           </div>
           <Accordion type="multiple" className="grid items-start justify-stretch gap-4">
@@ -58,9 +58,9 @@ import {
             ))}
           </Accordion>
           <div className="mx-auto mt-12 max-w-md text-center md:mt-18 lg:mt-20">
-            <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+            <h2 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
               {footerHeading}
-            </h4>
+            </h2>
             <p className="md:text-md text-xl">{footerDescription}</p>
             <a href="https://tidycal.com/silvandre/15-minute-meeting" target="_blank">
             <div className="mt-6 md:mt-8">

@@ -4,6 +4,7 @@ import Container from "../shared/Container.astro";
 import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
 import { services } from "../../utils/data";
+import Subtitle from "components/shared/Subtitle.astro";
 
 
 type ServicesProps = {
@@ -19,7 +20,7 @@ type ServicesProps = {
 <section id="services">
     <Container className="space-y-10 md:sapce-y-12">
         <div class="text-center max-w-3xl mx-auto space-y-4">
-            <Title>
+            <Title isSubtitle={true}>
                 What we offer
             </Title>
             <Paragraph>

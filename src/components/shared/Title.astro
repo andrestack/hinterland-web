@@ -1,3 +1,13 @@
-<h1 class="text-heading-1 font-black text-6xl sm:text-3xl md:text-4xl">
-    <slot/>
+---
+export interface Props {
+  isSubtitle?: boolean
+  className?: string
+ 
+}
+
+const {isSubtitle, className} = Astro.props;
+---
+
+<h1 class={`text-heading-1 font-black ${isSubtitle ? "text-5xl" : "text-6xl"} sm:text-3xl md:text-4xl ${className}`}>
+  <slot/>
 </h1>

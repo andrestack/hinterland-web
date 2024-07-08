@@ -5,6 +5,7 @@ import Paragraph from "../shared/Paragraph.astro";
 import Title from "../shared/Title.astro";
 import { projects } from "../../utils/work";
 import Works from "../cards/Works.astro";
+import Subtitle from "components/shared/Subtitle.astro";
 
 
 type ProjectProps = {
@@ -21,7 +22,7 @@ type ProjectProps = {
 <section id="ourwork">
     <Container className="space-y-10 md:sapce-y-12">
         <div class="text-center max-w-3xl mx-auto space-y-4">
-            <Title>
+            <Title isSubtitle={true}>
                Some of Our Work
             </Title>
             <Paragraph>
