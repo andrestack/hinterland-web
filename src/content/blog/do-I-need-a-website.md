@@ -4,7 +4,7 @@
   "title": "3 Simple Reasons Why You Still Need a Website in 2024",
   "snippet": "A well-designed website serves as the cornerstone of your online presence, providing a platform that you fully control and serves as a 24/7 digital brochure.",
   "image": {
-    "src": "https://hinterlandweb.com/laptop-mock-up-me.png",
+    "src": "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/laptop-mock-up-me.png",
     "alt": "Do I need A Website?"
   },
   "publishDate": "2024-07-03 13:05",

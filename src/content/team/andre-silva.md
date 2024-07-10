@@ -5,7 +5,7 @@
 "title": "Founder & Lifelong Learner",
 "avatar":
   {
-    "src": "https://www.hinterlandweb.com/LI%20profile%20pic.jpeg",
+    "src": "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/LI%20profile%20pic.jpeg",
     "alt": "André Silva",
   },
 "publishDate": "2022-11-07 15:39",
