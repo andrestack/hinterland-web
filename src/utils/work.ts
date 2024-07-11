@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Pohsso Wellness",
     description: "Soon launching a website for a masseuse friend in Portugal",
-    image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/wellness-booking-calendar.png`,
+    image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/wellness-screenshot.png`,
     url: "https://wellness.hinterlandweb-folio.in/",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "Pomona & District Kindergarten",
     description: "Website redesign for local Kindy in Pomona",
-    image: `https://pub-31971714d5324882b00b0345130560dd.r2.dev/pomona%20kindy.png`,
+    image: `https://pub-31971714d5324882b00b0345130560dd.r2.dev/pomona%20kigndy.pn`,
     url: "https://hinterland-web.github.io/pomona-kindy/",
   },
 
