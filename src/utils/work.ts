@@ -40,7 +40,7 @@ const projects = [
   {
     title: "Pomona & District Kindergarten",
     description: "Website redesign for local Kindy in Pomona",
-    image: `https://pub-31971714d5324882b00b0345130560dd.r2.dev/pomona%20kigndy.png`,
+    image: `https://pub-31971714d5324882b00b0345130560dd.r2.dev/pomona%20kindy.png`,
     url: "https://hinterland-web.github.io/pomona-kindy/",
   },
 
