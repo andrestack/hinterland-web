@@ -2,11 +2,10 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Container from "../components/sections/container.astro";
-import Sectionhead from "../components/sections/sectionhead.astro";
-import Title from "../components/shared/Title.astro";
 import Paragraph from "../components/shared/Paragraph.astro";
-
 import Button from "components/shared/Button.astro";
+
+
 
 //Filter team entries with 'draft: false' & date before current date
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
@@ -15,6 +14,12 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 
 
 
+
+// Fetch content for about page
+
+const aboutContent = await getCollection("team")
+
+const { Content } = await aboutContent[0].render()
 
 ---
 
@@ -39,8 +44,8 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
           <div class="group">
             <div class="w-full aspect-square">
               <img
-                src={teamMemberEntry.data.avatar.src}
-                alt={teamMemberEntry.data.avatar.alt}
+                src={teamMemberEntry.data.image.src}
+                alt={teamMemberEntry.data.image.alt}
                 sizes="(max-width: 800px) 100vw, 400px"
                 width={400}
                 height={400}
@@ -61,13 +66,14 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
   
   <div class="flex flex-col gap-3 mx-auto max-w-4xl">
     <h2 class="font-bold text-4xl text-secondary dark:text-tertiary">
-      It's never too late
+      It's never too late!
     </h2>
-    <Paragraph className="text-lg leading-relaxed">
-      {publishedTeamMembers[0].data.bio}
-   
-    </Paragraph>
-    
+    <div class="prose-h2:text-heading-2 leading-relaxed prose-li:marker:text-secondary dark:prose-li:marker:text-tertiary prose-lg mt-6 dark:text-tertiary">
+
+      <Content />
+
+
+    </div>
   </div>
   <div class="mx-auto max-w-md sm:max-w-xl pt-10 text-center">
     <a href=`https://tidycal.com/silvandre/15-minute-meeting` target="_blank">

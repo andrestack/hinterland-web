@@ -20,15 +20,18 @@ const blogCollection = defineCollection({
 
 const teamCollection = defineCollection({
   schema: z.object({
-    bio: z.string(),
+    
     draft: z.boolean(),
     name: z.string(),
     title: z.string(),
-    avatar: z.object({
+    image: z.object({
       src: z.string(),
       alt: z.string(),
     }),
     publishDate: z.string().transform(str => new Date(str)),
+    author: z.string().default('Astroship'),
+    category: z.string(),
+    tags: z.array(z.string()),
   }),
 });
 
