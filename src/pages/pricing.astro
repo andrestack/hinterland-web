@@ -1,0 +1,83 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/sections/container.astro";
+import Sectionhead from "../components/sections/sectionhead.astro";
+import PricingCard from "../components/sections/pricingCard.astro";
+
+const pricing = [
+  {
+    name: "Landing Page",
+    price: "$499",
+    popular: false,
+    features: [
+      "Fully Responsive",
+      "SEO Optimized",
+      "Custom Fonts",
+      "Custom Colors",
+      "3 months of hosting",
+      "3 months of upkeep included",
+    ],
+    button: {
+      text: "Get Started",
+      link: "https://tidycal.com/silvandre/landing-page-booking-type",
+    },
+  },
+  {
+    name: "3-4 Pages",
+    price: {
+      monthly: "$999",
+      annual: "$16",
+      discount: "10%",
+      original: "$24",
+    },
+    popular: true,
+    features: [
+      "Fully Responsive",
+      "SEO Optimized",
+      "Custom Fonts",
+      "Custom Colors",
+      "6 months of hosting",
+      "6 months of upkeep included",
+    ],
+    button: {
+      text: "Get Started",
+      link: "https://tidycal.com/silvandre/full-website-booking-type",
+    },
+  },
+  {
+    name: "Premium, starts at",
+    price: "$1499",
+    popular: false,
+    features: [
+      "AI Integrations",
+      "Automation Workflows",
+      "Fully Responsive",
+      "SEO Optimized",
+      "Custom Fonts",
+      "Custom Colors",
+      "12 months of hosting",
+      "12 months of upkeep included",
+    ],
+    button: {
+      text: "Get Started",
+      link: "https://tidycal.com/silvandre/custom-solution-booking-type",
+    },
+  },
+];
+---
+
+<Layout title="Pricing" value="pricing">
+  <Container class="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-18">
+    <Sectionhead>
+       
+      <h1 slot="title" class="text-6xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Pricing</h1>
+      <p slot="desc" class="md:text-md text-xl">
+        Simple & Predictable pricing. No Surprises.
+      </p>
+    </Sectionhead>
+
+    <div class="dark:text-tertiary grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-screen-lg mt-12">
+      {pricing.map((item) => <PricingCard plan={item} />)}
+    </div>
+  </Container>
+</Layout>
