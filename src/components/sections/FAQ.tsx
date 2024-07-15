@@ -35,7 +35,7 @@ import {
       <section className="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-24">
         <div className="container mx-auto max-w-lg">
           <div className="mb-12 text-center md:mb-18 lg:mb-20">
-            <h1 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">{heading}</h1>
+            <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">{heading}</h1>
             <p className="md:text-md text-xl">{description}</p>
           </div>
           <Accordion type="multiple" className="grid items-start justify-stretch gap-4">

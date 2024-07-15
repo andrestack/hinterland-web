@@ -10,7 +10,7 @@ export interface Props {
 
 const { title } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString()
-console.log(canonicalURL)
+
 const resolvedImageWithDomain = new URL("/images/cooroora-pic.webp", Astro.site).toString()
 
 ---
@@ -24,7 +24,7 @@ const resolvedImageWithDomain = new URL("/images/cooroora-pic.webp", Astro.site)
     <meta name="generator" content={Astro.generator} />
 
     <SEO
-    description="Hinterland Web provides top-notch web services for local businesses in the Noosa Hinterland, and beyond. We simplify the process of getting your business online. Get in touch and collaborate directly with Andre for a personalized approach."
+    description="Hinterland Web offers premium web design and developement services for local businesses in Noosa Hinterland and beyond. The mission is simple: to help you establish and enhance your online presence, no matter where you're starting from! Contact André today!"
     canonical={canonicalURL}
     openGraph={{
       basic: {

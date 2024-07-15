@@ -30,7 +30,7 @@ export const Testimonial17 = (props: Testimonial17Props) => {
   } as Props;
   return (
     <section className="px-[5%] py-0 md:py-24 lg:py-18 text-heading-1 dark:text-tertiary">
-      <div className="container">
+      <div className="space-y-10 md:space-y-12">
         <div className="mb-12 text-center md:mb-18 lg:mb-20">
           {/* <h2 className="mb-5 text-5xl font-bold md:mb-6 ">{heading}</h2> */}
           <h2 className="md:text-md text-5xl font-black">{description}</h2>
