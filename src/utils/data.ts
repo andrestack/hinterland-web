@@ -1,6 +1,6 @@
 const services = [
   {
-    title: "Website Development",
+    title: "Website Design & Development",
     description:
       "We craft websites that reflect your unique brand and personality, helping you attract more clients and increase visibility.",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
