@@ -14,7 +14,7 @@
 }
 ---
 
-A couple of days ago I was talking to an artist that is part of the administration board of a local Art Gallery. After telling her what I do and what Hinterland Web is all about. She mentioned that in the last meeting, the board was not keen on investing in a website, but rather use the power of social media to promote the the work and events of the the Art Gallery.
+A couple of days ago I was talking to an artist that is part of the administration board of a local Art Gallery. After telling her what I do and what Hinterland Web is all about. She mentioned that in the last meeting, the board was not keen on investing in a website, but rather use the power of social media to promote their work and events at the Art Gallery.
 
 ## Why do brands still need a website in 2024?
 
@@ -24,7 +24,7 @@ The Internet has evolved in unimaginable ways since the very first website was l
 
 A well-designed website serves as the cornerstone of your online presence, providing a platform that you fully control. Unlike social media platforms where you're at the mercy of someone else's algorithm, your website gives you the freedom to create content and showcase your products or services exactly as you envision.
 
-Moreover, a website is essential for building trust with potential customers. It serves as a 24/7 digital brochure, offering valuable information about your business, its history, and its offerings. This approach ensures that your audience can access information about your and your brand at any time, enhancing your credibility and professional image.
+Moreover, a website is essential for building trust with potential customers. It serves as a 24/7 digital brochure, offering valuable information about your business, its history, and its offerings. This approach ensures that your audience can access information about you and your brand at any time, enhancing your credibility and professional image.
 
 Let's explore three simple reasons websites remain crucial in 2024 and how they can benefit your business or personal brand.
 
