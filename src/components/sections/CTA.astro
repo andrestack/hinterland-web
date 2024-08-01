@@ -50,15 +50,19 @@ import Paragraph from "../shared/Paragraph.astro";
         <!-- <Paragraph className={"pt-10"}>
           If you are unsure where to start, no worries, we are here to help.<br/><strong class="text-xl"> Just gives a call</strong> !
         </Paragraph> -->
-        <div class="mx-auto max-w-md sm:max-w-xl pt-10">
-          <a href=`https://tidycal.com/silvandre/15-minute-meeting` target="_blank">
+        <div class="mx-auto max-w-md sm:max-w-xl py-10 mb-10">
+          <!-- <a href=`https://tidycal.com/silvandre/15-minute-meeting` target="_blank"> -->
           <Button variant={"primary"}>
-            <span class="text-white text-2xl relative z-[5]">Give Us a Call</span>
+            <span class="text-white text-2xl relative z-[5]">Book a Call Below 👇</span>
           </Button>
-        </a>
+         
+        <!-- </a> -->
+        
+      </div>
+      <div class="tidycal-embed mt-10" data-path="silvandre/15-minute-meeting"></div>
+        <script is:inline src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
         
         </div>
-      </div>
       
     </div>
     
