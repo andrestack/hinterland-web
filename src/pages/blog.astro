@@ -23,7 +23,7 @@ publishedBlogEntries.sort(function (a, b) {
     <Sectionhead>
       <Title slot="title" className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Welcome to Our Blog</Title>
       <Paragraph slot="desc">
-        This is a collection of article that intend to clarify all thing about building an online presence
+        This is a collection of articles that intend to clarify all things about building an online presence
       </Paragraph>
     </Sectionhead>
     <main class="mt-16">
@@ -37,8 +37,8 @@ publishedBlogEntries.sort(function (a, b) {
                     src={blogPostEntry.data.image.src}
                     alt={blogPostEntry.data.image.alt}
                     sizes="(max-width: 800px) 100vw, 800px"
-                    width={800}
-                    height={800}
+                    width={430}
+                    height={240}
                     loading={index <= 2 ? "eager" : "lazy"}
                     decoding={index <= 2 ? "sync" : "async"}
                     class="w-full rounded-md object-cover object-center bg-white"
