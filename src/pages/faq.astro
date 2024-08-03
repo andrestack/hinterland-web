@@ -1,7 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import {Faq4} from "../components/sections/FAQ"
+
+const description = "If you have questions, we have answers. Otherwise, just get in touch and let's have a chat!";
+
 ---
-<Layout title="FAQ" value="faq">
+<Layout title="FAQ" value="faq" description={description}>
 <Faq4 client:load/>
 </Layout>

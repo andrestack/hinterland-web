@@ -16,9 +16,11 @@ const publishedBlogEntries = await getCollection("blog", ({ data }) => {
 publishedBlogEntries.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
+
+const description = "Our blog is a great place to start to understand why we do what we do at Hinterland Web."
 ---
 
-<Layout title="Blog" value="blog">
+<Layout title="Blog" value="blog" description={description}>
   <Container>
     <Sectionhead>
       <Title slot="title" className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Welcome to Our Blog</Title>

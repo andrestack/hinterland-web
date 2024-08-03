@@ -20,16 +20,19 @@ export async function getStaticPaths() {
 // Get the entry directly from the prop on render
 const { entry } = Astro.props;
 
+
+
   
  
   // Use Content here
   const { Content } = await entry.render();
+  
  
 
 
 ---
 
-<Layout title={entry.data.title} value="">
+<Layout title={entry.data.title} value="" description={entry.data.snippet}>
   <Container>
     <div class="mx-auto max-w-3xl mt-32">
       <span class="text-primary uppercase tracking-wider text-sm font-medium">

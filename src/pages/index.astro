@@ -7,9 +7,13 @@ import HowItWorks from '../components/sections/HowItWorks.astro';
 import CTA from '../components/sections/CTA.astro';
 import OurWork from "../components/sections/OurWork.astro";
 import { Testimonial17 } from "components/sections/Testimonials";
+
+const description="Hinterland Web offers premium web design and developement services for local businesses in Noosa Hinterland and beyond. The mission is simple: to help you establish and enhance your online presence, no matter where you're starting from! Contact André today!"
+
+
 ---
 
-<Layout title="Helping you kickstart your online presence" value="">
+<Layout title="Helping you kickstart your online presence" value="" description={description}>
 	<main class="flex flex-col gap-y-24 md:gap-y-32 overflow-hidden">
 		<Hero/>
 		<Testimonial17/>

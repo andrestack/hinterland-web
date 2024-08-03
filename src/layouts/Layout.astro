@@ -6,12 +6,16 @@ import {SEO} from "astro-seo";
 export interface Props {
   title: string;
   value: string;
+  description: string;
 }
 
 const { title } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString()
 
 const resolvedImageWithDomain = new URL("/images/cooroora-pic.webp", Astro.site).toString()
+
+const description="Hinterland Web offers premium web design and developement services for local businesses in Noosa Hinterland and beyond. The mission is simple: to help you establish and enhance your online presence, no matter where you're starting from! Contact André today!"
+   
 
 ---
 
@@ -24,7 +28,7 @@ const resolvedImageWithDomain = new URL("/images/cooroora-pic.webp", Astro.site)
     <meta name="generator" content={Astro.generator} />
 
     <SEO
-    description="Hinterland Web offers premium web design and developement services for local businesses in Noosa Hinterland and beyond. The mission is simple: to help you establish and enhance your online presence, no matter where you're starting from! Contact André today!"
+    description={description}
     canonical={canonicalURL}
     openGraph={{
       basic: {
