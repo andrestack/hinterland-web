@@ -3,18 +3,17 @@
   "draft": false,
   "title": "The Essential Elements of a Successful Landing Page",
   "snippet": "A landing page is an essential part of any successful online business. Here’s a straightforward checklist to guide you in crafting the ideal landing page.",
-  "image": {
-    "src": "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/blog-successful-landing%20page.png",
-    "alt": "Perfect landing page"
-  },
+  "image":
+    {
+      "src": "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/blog-successful-landing%20page.png",
+      "alt": "Perfect landing page",
+    },
   "publishDate": "2024-07-15 09:26",
   "category": "Knowledge",
   "author": "André Silva",
-  "tags": ["online", "landing pages", "conversion"]
+  "tags": ["online", "landing pages", "conversion"],
 }
 ---
-
-
 
 First things first, what is actually a landing page? A landing page is an essential part of any successful online business. It is the first point of contact, usually the home page, where potential customers can access your product or service and see what you are all about. Once potential clients "land" on your page, they are more likely to engage with your product or service: You just have to make sure that you offer them the best landing experience possible.
 
@@ -64,4 +63,4 @@ Therefore, creating a successful landing page requires a thoughtful combination 
 - Ensure your website is mobile-friendly by optimizing the design for mobile users and keeping images at manageable file sizes.
 - Conduct A/B tests regularly to determine which copy and images yield the highest conversions.
 
-**By checking off each of these elements, you’re not just designing a page; you’re creating an experience that transforms visitors into loyal customers. And if you need more guidance, click the button below and let's get started.**
+By checking off each of these elements, you’re not just designing a page; you’re creating an experience that transforms visitors into loyal customers. And if you need more guidance, click the button below and let's get started.

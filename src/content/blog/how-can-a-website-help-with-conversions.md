@@ -3,14 +3,15 @@
   "draft": false,
   "title": "How Can a Website Help You Getting more Conversions?",
   "snippet": "Wondering how a website can help boost your business? On this blog post I am sharing 6 effective strategies that are guaranteed to improve conversion. ",
-  "image": {
-    "src": "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/blog-conversions.png",
-    "alt": "Website Help Conversions"
-  },
+  "image":
+    {
+      "src": "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/blog-conversions.png",
+      "alt": "Website Help Conversions",
+    },
   "publishDate": "2024-07-31 12:26",
   "category": "Knowledge",
   "author": "André Silva",
-  "tags": ["online", "website", "conversion"]
+  "tags": ["online", "website", "conversion"],
 }
 ---
 
@@ -29,7 +30,7 @@ Your landing page often gives people their first look at your business. Here's h
 - Show that others trust you with reviews or trust symbols
 - Add a big, eye-catching button that tells people what to do next
 
-Keep in mind that simplicity matters – get rid of anything that might distract visitors from your conversion goal. I also wrote [__this piece__](https://hinterlandweb.com/blog/what-makes-a-perfect-landing-page/) about what goes into a high-converting landing page.
+Keep in mind that simplicity matters – get rid of anything that might distract visitors from your conversion goal. I also wrote [**this piece**](https://hinterlandweb.com/blog/what-makes-a-perfect-landing-page/) about what goes into a high-converting landing page.
 
 ### 2. Use Social Proof to Your Advantage
 
@@ -96,4 +97,4 @@ To sum up here are the most essential points to remember:
 
 By putting these plans into action, you'll be on track to build a website that turns more visitors into customers and brings real results for your business. Keep in mind, making your website better at converting is an ongoing job – keep trying new things looking at the results, and making improvements to stay ahead in the tough online scene.
 
-**Yes, there are a lot of techinallity and marketing jargon happening in this article, so if all of this sounds a bit too overwhelming, worry not, we're here to help. Click the button below to get a free consultation with me.**
+Yes, there are a lot of techinallity and marketing jargon happening in this article, so if all of this sounds a bit too overwhelming, worry not, we're here to help. Click the button below to get a free consultation with me.

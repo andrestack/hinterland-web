@@ -2,6 +2,7 @@
 import Footer from "../components/elements/Footer.astro";
 import Navbar from "../components/elements/Navbar.astro";
 import {SEO} from "astro-seo";
+import ViewTransitions from "astro/components/ViewTransitions.astro";
 
 export interface Props {
   title: string;
@@ -55,7 +56,7 @@ const description="Hinterland Web offers premium web design and developement ser
       rel="stylesheet"
     />
     <link rel="sitemap" href="/sitemap-index.xml" />
-
+    <ViewTransitions />
   </head>
   <body class="overflow-hidden overflow-y-auto bg-body">
     <Navbar />
@@ -63,87 +64,63 @@ const description="Hinterland Web offers premium web design and developement ser
     <Footer />
     
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
   <script>
-    const switchTheme = document.querySelector(
-      "[data-switch-theme]"
-    ) as HTMLButtonElement;
+  document.addEventListener("astro:page-load", () => {
+    function handleThemeToggle() {
+        const switchTheme = document.querySelector(
+          "[data-switch-theme]"
+        ) as HTMLButtonElement;
 
-    if (
-      localStorage.getItem("appTheme") === "dark" ||
-      (!("appTheme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-    if (switchTheme) {
-      switchTheme.addEventListener("click", (e) => {
-        e.preventDefault();
-        const doc = document.documentElement;
-        if (doc) {
-          if (localStorage.getItem("appTheme")) {
-            if (localStorage.getItem("appTheme") === "light") {
-              doc.classList.add("dark");
-              localStorage.setItem("appTheme", "dark");
+        if (switchTheme) {
+          const initTheme = () => {
+            if (
+              localStorage.getItem("appTheme") === "dark" ||
+              (!("appTheme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+            ) {
+              document.documentElement.classList.add("dark");
             } else {
               document.documentElement.classList.remove("dark");
-              localStorage.setItem("appTheme", "light");
             }
-          } else {
-            if (doc.classList.contains("dark")) {
-              doc.classList.remove("dark");
-              localStorage.setItem("appTheme", "light");
-            } else {
-              doc.classList.add("dark");
-              localStorage.setItem("appTheme", "dark");
+          };
+
+          initTheme();
+
+          const toggleTheme = () => {
+            const doc = document.documentElement;
+            if (doc) {
+              if (localStorage.getItem("appTheme")) {
+                if (localStorage.getItem("appTheme") === "light") {
+                  doc.classList.add("dark");
+                  localStorage.setItem("appTheme", "dark");
+                } else {
+                  doc.classList.remove("dark");
+                  localStorage.setItem("appTheme", "light");
+                }
+              } else {
+                if (doc.classList.contains("dark")) {
+                  doc.classList.remove("dark");
+                  localStorage.setItem("appTheme", "light");
+                } else {
+                  doc.classList.add("dark");
+                  localStorage.setItem("appTheme", "dark");
+                }
+              }
             }
-          }
+          };
+
+          switchTheme.addEventListener("click", toggleTheme);
         }
-      });
-    }
+      }
+
+      // Run on initial page load
+      handleThemeToggle();
+
+      // Re-run on view transitions
+      document.addEventListener('astro:after-swap', handleThemeToggle);
+    });
   </script>
-  <script>
-    const toggleMenu = document.querySelector(
-      "[data-toggle-nav]"
-    ) as HTMLButtonElement;
-    const navbar = document.querySelector("[data-navbar]") as HTMLDivElement;
-    const overlayNav = document.querySelector(
-      "[data-nav-overlay]"
-    ) as HTMLDivElement;
-    if (toggleMenu) {
-      toggleMenu.addEventListener("click", e => {
-        e.preventDefault();
-        if (toggleMenu.getAttribute("data-open-nav") === "false") {
-          toggleMenu.setAttribute("data-open-nav", "true");
-          overlayNav.setAttribute("data-is-visible", "true");
-          document.body.classList.add("!overflow-y-hidden");
-		  navbar.style.height = `${navbar.scrollHeight}px`
-
-        }else{
-			toggleMenu.setAttribute("data-open-nav", "false");
-        	overlayNav.setAttribute("data-is-visible", "false");
-        	document.body.classList.remove("!overflow-y-hidden");
-		  	navbar.style.height = "0px"
-		}
-		
-        
-      });
-
-      navbar.addEventListener("click", () => {
-        toggleMenu.setAttribute("data-open-nav", "false");
-        overlayNav.setAttribute("data-is-visible", "false");
-        document.body.classList.remove("!overflow-y-hidden");
-		  	navbar.style.height = "0px"
-      });
-
-      overlayNav.addEventListener("click", () => {
-        toggleMenu.setAttribute("data-open-nav", "false");
-        	overlayNav.setAttribute("data-is-visible", "false");
-        	document.body.classList.remove("!overflow-y-hidden");
-		  	navbar.style.height = "0px"
-      });
-    }
   </script>
 </html>
 <style is:global>
