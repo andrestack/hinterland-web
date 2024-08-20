@@ -43,6 +43,12 @@ const projects = [
     image: `https://pub-31971714d5324882b00b0345130560dd.r2.dev/C%26A_Logo_HI-RES.jpg`,
     url: "https://hinterland-web.github.io/pomona-kindy/",
   },
+  {
+    title: "Bear Cave Barber",
+    description: "Website design for a Barber Shop in Cooroy",
+    image: `https://pub-ed0f4b8b153c4c809b08926b1d61a25e.r2.dev/bearcavebarber-website-screenshot.png`,
+    url: "https://bearcavebarber.com.au",
+  },
 
 
   ,

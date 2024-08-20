@@ -24,22 +24,23 @@ module.exports = {
         midmd: "880px",
       },
     },
+    perspective: {
+      1000: "1000px",
+    },
+    keyframes: {
+      "float-tilt": {
+        "0%, 100%": { transform: "translateY(0) rotate3d(0, 1, 0, 0deg)" },
+        "25%": { transform: "translateY(-15px) rotate3d(0, 1, 0, 5deg)" },
+        "50%": { transform: "translateY(-30px) rotate3d(0, 1, 0, 0deg)" },
+        "75%": { transform: "translateY(-15px) rotate3d(0, 1, 0, -5deg)" },
+      },
+      
+    },
+    animation: {
+      "float-tilt": "float-tilt 6s ease-in-out infinite",
+      
+    },
   },
+
   plugins: [require("@tailwindcss/typography"), "@relume_io/relume-ui"],
 };
-
-// /** @type {import('tailwindcss').Config} */
-
-// module.exports = {
-// 	content: [
-// 	  "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-// 	  "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-// 	  "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-// 	  "./node_modules/@relume_io/relume-ui/dist/**/*.{js,ts,jsx,tsx}"
-// 	],
-// 	theme: {
-// 	  extend: {},
-// 	},
-// 	presets: [require("@relume_io/relume-tailwind")],
-// 	plugins: [],
-//   }

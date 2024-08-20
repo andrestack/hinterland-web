@@ -17,15 +17,21 @@ publishedBlogEntries.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
 
-const description = "Our blog is a great place to start to understand why we do what we do at Hinterland Web."
+const description =
+  "Our blog is a great place to start to understand why we do what we do at Hinterland Web.";
 ---
 
 <Layout title="Blog" value="blog" description={description}>
   <Container>
     <Sectionhead>
-      <Title slot="title" className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Welcome to Our Blog</Title>
+      <Title
+        slot="title"
+        className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
+        >Welcome to Our Blog</Title
+      >
       <Paragraph slot="desc">
-        This is a collection of articles that intend to clarify all things about building an online presence
+        This is a collection of articles that intend to clarify all things about
+        building an online presence
       </Paragraph>
     </Sectionhead>
     <main class="mt-16">
@@ -53,7 +59,6 @@ const description = "Our blog is a great place to start to understand why we do 
                     <Subtitle class="leading-snug tracking-tight mt-1 ">
                       {blogPostEntry.data.title}
                     </Subtitle>
-                    
 
                     <div class="flex gap-2 mt-3">
                       <span class="text-gray-500">
@@ -62,14 +67,25 @@ const description = "Our blog is a great place to start to understand why we do 
                       <span class="text-gray-500">• </span>
                       <time
                         class="text-gray-500"
-                        datetime={blogPostEntry.data.publishDate.toISOString()}>
+                        datetime={blogPostEntry.data.publishDate.toISOString()}
+                      >
                         {blogPostEntry.data.publishDate.toDateString()}
                       </time>
                     </div>
                     <Paragraph>{blogPostEntry.data.snippet}</Paragraph>
                   </div>
-                
-                
+                  <meta
+                    property="og:image"
+                    content={blogPostEntry.data.image.src}
+                  />
+                  <meta
+                    property="og:title"
+                    content={blogPostEntry.data.title}
+                  />
+                  <meta
+                    property="og:description"
+                    content={blogPostEntry.data.snippet}
+                  />
                 </div>
               </a>
             </li>

@@ -70,23 +70,20 @@ import Container from "../shared/Container.astro";
             <BtnLink href="https://tidycal.com/silvandre/15-minute-meeting" text="Book a Free Discovery Call" variant="primary" className="lg:text-2xl sm:text-xl shadow-lg shadow-box-shadow"/>
         </div>
 
-        <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
-            <div id="tilt-image" class="w-full h-full">
+        <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl ">
+        
                 <img src="/images/cooroora-pic.webp" alt="Hero image" width="2350" height="2359" class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
-            </div>
+            
         </div>
+        <!-- <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 max-w-3xl perspective-1000 w-auto mx-auto my-12">
+            <img 
+              src="/images/cooroora-pic.webp" 
+              alt="Floating Image" 
+              class="w-full rounded-lg shadow-lg animate-float-tilt transition-shadow duration-1000 ease-in-out hover:shadow-xl"
+            >
+          </div> -->
     </Container>
 
    
 </section>
 
-<script>
-import { VanillaTilt } from "utils/tilt";
-
-    VanillaTilt.init(document.querySelectorAll("#tilt-image"), {
-        max: 25,
-        speed: 400,
-        glare: true,
-        "max-glare": 0.5,
-    });
-</script>

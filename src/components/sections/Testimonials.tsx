@@ -35,7 +35,7 @@ export const Testimonial17 = (props: Testimonial17Props) => {
           {/* <h2 className="mb-5 text-5xl font-bold md:mb-6 ">{heading}</h2> */}
           <h2 className="md:text-md text-5xl font-black">{description}</h2>
         </div>
-        <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -100,6 +100,18 @@ export const Testimonial17Defaults: Testimonial17Props = {
       name: "Nathan Berg",
       position: "",
       companyName: "Beat-Etage, Berlin",
+      numberOfStars: 5,
+    },
+    {
+      testimonial:
+        "André took the time to understand my vision and goals for my website, offering valuable insights and suggestions that enhanced my original ideas. His expertise in marketing strategies was evident, as he crafted a site that not only looks stunning but also effectively communicates my brand message and engages my target audience.",
+      avatar: {
+        src: "https://pub-ed0f4b8b153c4c809b08926b1d61a25e.r2.dev/bearcavebarber-website-screenshot.png",
+        alt: "Testimonial avatar 2",
+      },
+      name: "Paris Devine",
+      position: "",
+      companyName: "Bear Cave Barber, Cooroy",
       numberOfStars: 5,
     },
    
