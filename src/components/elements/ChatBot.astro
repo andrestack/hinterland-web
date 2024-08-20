@@ -1,0 +1,57 @@
+---
+// src/components/ChatBot.astro
+---
+
+<div id="chat-bot-container"></div>
+
+<script is:inline type="text/javascript">
+  (function (d, t) {
+    var v = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    v.onload = function () {
+      if (!document.getElementById("root")) {
+        var root = d.createElement("div");
+        root.id = "root";
+        d.body.appendChild(root);
+      }
+      if (
+        window.myChatWidget &&
+        typeof window.myChatWidget.load === "function"
+      ) {
+        window.myChatWidget.load({
+          assistantId: "5610d5f9-a24d-479f-86df-55522a2f1636",
+          apiKey: "1c3cb179-3a10-4224-87cd-b4045fc27363",
+        });
+      }
+    };
+    v.src = "https://agentivehub.com/production.bundle.min.js";
+    v.type = "text/javascript";
+    s.parentNode.insertBefore(v, s);
+  })(document, "script");
+</script>
+
+<style>
+  /* This style targets the root element created by the script */
+  :global(#root) {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  /* You might need to adjust these selectors based on the actual structure created by the widget */
+  :global(#root > div),
+  :global(#root button) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    :global(#root) {
+      bottom: 10px;
+      right: 10px;
+    }
+  }
+</style>
