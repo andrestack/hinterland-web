@@ -6,16 +6,16 @@ import PricingCard from "../components/sections/pricingCard.astro";
 
 const pricing = [
   {
-    name: "Landing Page",
+    name: "Basic",
     price: "$499",
     popular: false,
     features: [
-      "Fully Responsive",
-      "SEO Optimized",
-      "Custom Fonts",
-      "Custom Colors",
+      "1 Landing Page",
+     
+      "Contact Form Integration",
+      "1 Revision",
       "3 months of hosting",
-      "3 months of upkeep included",
+      "3 months of upkeep and support",
     ],
     button: {
       text: "Get Started",
@@ -23,21 +23,21 @@ const pricing = [
     },
   },
   {
-    name: "3-4 Pages",
+    name: "Pro",
     price: {
       monthly: "$999",
       annual: "$16",
       discount: "10%",
-      original: "$24",
+      original: "starts at",
     },
     popular: true,
     features: [
-      "Fully Responsive",
-      "SEO Optimized",
-      "Custom Fonts",
-      "Custom Colors",
+      "Everything from the Basic Package",
+      "Up to 5 Pages",
+      "Custom Blog",
+      "2 Revisions",
       "6 months of hosting",
-      "6 months of upkeep included",
+      "6 months of upkeep and support",
     ],
     button: {
       text: "Get Started",
@@ -49,14 +49,12 @@ const pricing = [
     price: "Let's Talk",
     popular: false,
     features: [
+      "Everything from the Pro Package",
       "AI Integrations",
       "Automation Workflows",
-      "Fully Responsive",
-      "SEO Optimized",
-      "Custom Fonts",
-      "Custom Colors",
+
       "12 months of hosting",
-      "12 months of upkeep included",
+      "12 months of upkeep and support",
     ],
     button: {
       text: "Get Started",
@@ -65,20 +63,29 @@ const pricing = [
   },
 ];
 
-const description = "Hinterland Web offers simple & predictable pricing. No Surprises.";
+const description =
+  "Hinterland Web offers simple & predictable pricing. No Surprises.";
 ---
 
 <Layout title="Pricing" value="pricing" description={description}>
-  <Container class="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-18">
+  <Container
+    class="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-18"
+  >
     <Sectionhead>
-       
-      <h1 slot="title" class="text-6xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">Pricing</h1>
+      <h1
+        slot="title"
+        class="text-6xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
+      >
+        Pricing
+      </h1>
       <p slot="desc" class="md:text-md text-xl">
-        Simple & Predictable pricing. No Surprises.
+        Simple & Predictable pricing. No Surprises. All Websites are mobile friendly and SEO Optimised!
       </p>
     </Sectionhead>
 
-    <div class="dark:text-tertiary grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-screen-lg mt-12">
+    <div
+      class="dark:text-tertiary grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-screen-lg mt-12"
+    >
       {pricing.map((item) => <PricingCard plan={item} />)}
     </div>
   </Container>
