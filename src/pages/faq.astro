@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import {Faq4} from "../components/sections/FAQ"
+import ChatBot from "components/elements/ChatBot.astro";
 
 const description = "If you have questions, we have answers. Otherwise, just get in touch and let's have a chat!";
 
@@ -8,5 +9,6 @@ const description = "If you have questions, we have answers. Otherwise, just get
 <Layout title="FAQ" value="faq" description={description}>
     <main>
         <Faq4 />
+        <ChatBot />
     </main>
 </Layout>

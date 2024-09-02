@@ -50,7 +50,6 @@ const projects = [
     url: "https://bearcavebarber.com.au",
   },
 
-
   ,
 ];
 

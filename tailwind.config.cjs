@@ -34,11 +34,9 @@ module.exports = {
         "50%": { transform: "translateY(-30px) rotate3d(0, 1, 0, 0deg)" },
         "75%": { transform: "translateY(-15px) rotate3d(0, 1, 0, -5deg)" },
       },
-      
     },
     animation: {
       "float-tilt": "float-tilt 6s ease-in-out infinite",
-      
     },
   },
 

@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [tailwind(), icon(), sitemap(), react()],
   vite: {
     ssr: {
-      noExternal: ['react-icons'],
+      noExternal: ["react-icons"],
     },
   },
   site: "https://hinterlandweb.com",
