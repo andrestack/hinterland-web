@@ -21,7 +21,8 @@ type Props = {
   testimonials: Testimonial[];
 };
 
-export type Testimonial17Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
+export type Testimonial17Props = React.ComponentPropsWithoutRef<"section"> &
+  Partial<Props>;
 
 export const Testimonial17 = (props: Testimonial17Props) => {
   const { heading, description, testimonials } = {
@@ -49,7 +50,9 @@ export const Testimonial17 = (props: Testimonial17Props) => {
                       <BiSolidStar key={starIndex} className="mr-1 size-6" />
                     ))}
                 </div>
-                <blockquote className={`before:content-['"'] after:content-['"'] md:text-md`}>
+                <blockquote
+                  className={`before:content-['"'] after:content-['"'] md:text-md`}
+                >
                   {testimonial.testimonial}
                 </blockquote>
               </div>
@@ -61,9 +64,7 @@ export const Testimonial17 = (props: Testimonial17Props) => {
                 />
                 <div>
                   <p className="font-semibold">{testimonial.name}</p>
-                  <p>
-                    {testimonial.companyName}
-                  </p>
+                  <p>{testimonial.companyName}</p>
                 </div>
               </div>
             </div>
@@ -114,7 +115,6 @@ export const Testimonial17Defaults: Testimonial17Props = {
       companyName: "Bear Cave Barber, Cooroy",
       numberOfStars: 5,
     },
-   
   ],
 };
 
