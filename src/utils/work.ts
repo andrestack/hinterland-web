@@ -2,14 +2,14 @@ const projects = [
   {
     title: "Aldeia Djembe Camp",
     description: "A landing page for a dance and drum retreat in Portugal.",
-    image: `/images/screenshot-adc.png`,
+    image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/screenshot-adc.png`,
     position: "left",
     url: "https://aldeia-djembe-camp.com/",
   },
   {
     title: "Wayfaring",
     description: "Recruitment agency based in Melbourne",
-    image: `/images/screenshot-wayfaring.png`,
+    image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/screenshot-wayfaring.png`,
     position: "left",
     url: "https://wayfaring.hinterlandweb-folio.in/",
   },

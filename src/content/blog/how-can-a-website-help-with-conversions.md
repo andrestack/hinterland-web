@@ -30,7 +30,7 @@ Your landing page often gives people their first look at your business. Here's h
 - Show that others trust you with reviews or trust symbols
 - Add a big, eye-catching button that tells people what to do next
 
-Keep in mind that simplicity matters – get rid of anything that might distract visitors from your conversion goal. I also wrote [**this piece**](https://hinterlandweb.com/blog/what-makes-a-perfect-landing-page/) about what goes into a high-converting landing page.
+Keep in mind that simplicity matters – get rid of anything that might distract visitors from your conversion goal. I also wrote [<u>this piece</u>](https://hinterlandweb.com/blog/what-makes-a-perfect-landing-page/) about what goes into a high-converting landing page.
 
 ### 2. Use Social Proof to Your Advantage
 
@@ -84,7 +84,8 @@ A/B testing is one of the best ways to increase conversions:
 
 Keep in mind, A/B testing is an ongoing process to improve .
 
-## Key Takeaways: Boosting Your Website's Conversion Rate
+## Key Takeaways 
+## Boosting Your Website's Conversion Rate
 
 To sum up here are the most essential points to remember:
 
