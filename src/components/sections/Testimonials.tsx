@@ -81,6 +81,18 @@ export const Testimonial17Defaults: Testimonial17Props = {
   testimonials: [
     {
       testimonial:
+        "André took the time to understand my vision and goals for my website, offering valuable insights and suggestions that enhanced my original ideas. His expertise in marketing strategies was evident, as he crafted a site that not only looks stunning but also effectively communicates my brand message and engages my target audience.",
+      avatar: {
+        src: "https://pub-ed0f4b8b153c4c809b08926b1d61a25e.r2.dev/bearcavebarber-website-screenshot.png",
+        alt: "Testimonial avatar 2",
+      },
+      name: "Paris Devine",
+      position: "",
+      companyName: "Bear Cave Barber, Cooroy",
+      numberOfStars: 5,
+    },
+    {
+      testimonial:
         "André at Hinterland Web really understood what we were looking for. Our new website does a great job transmitting what our event is all about!",
       avatar: {
         src: "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/testimonials1.png",
@@ -103,18 +115,7 @@ export const Testimonial17Defaults: Testimonial17Props = {
       companyName: "Beat-Etage, Berlin",
       numberOfStars: 5,
     },
-    {
-      testimonial:
-        "André took the time to understand my vision and goals for my website, offering valuable insights and suggestions that enhanced my original ideas. His expertise in marketing strategies was evident, as he crafted a site that not only looks stunning but also effectively communicates my brand message and engages my target audience.",
-      avatar: {
-        src: "https://pub-ed0f4b8b153c4c809b08926b1d61a25e.r2.dev/bearcavebarber-website-screenshot.png",
-        alt: "Testimonial avatar 2",
-      },
-      name: "Paris Devine",
-      position: "",
-      companyName: "Bear Cave Barber, Cooroy",
-      numberOfStars: 5,
-    },
+   
   ],
 };
 

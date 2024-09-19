@@ -1,7 +1,7 @@
 ---
 {
   "draft": false,
-  "title": "The Essential Elements of a Successful Landing Page",
+  "title": "What Elements does a Successful Landing Page Need?",
   "snippet": "A landing page is an essential part of any successful online business. Here’s a straightforward checklist to guide you in crafting the ideal landing page.",
   "image":
     {
