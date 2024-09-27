@@ -36,7 +36,7 @@ export const Testimonial17 = (props: Testimonial17Props) => {
           {/* <h2 className="mb-5 text-5xl font-bold md:mb-6 ">{heading}</h2> */}
           <h2 className="md:text-md text-5xl font-black">{description}</h2>
         </div>
-        <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-2 lg:grid-cols-2">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
@@ -93,6 +93,18 @@ export const Testimonial17Defaults: Testimonial17Props = {
     },
     {
       testimonial:
+        "Andre recently helped me finish off my new website, and making it mobil friendly. I can't speak highly enough about his work. Great communicator, really, realllllyyyy knows his stuff, and tweaked the site to be so much more user friendly than I thought possible.",
+      avatar: {
+        src: "/images/ckc_logo_nobg.png",
+        alt: "Caloundra Kitchens and Carpentry",
+      },
+      name: "Liam Green",
+      position: "",
+      companyName: "Caloundra Kitchens and Carpentry",
+      numberOfStars: 5,
+    },
+    {
+      testimonial:
         "André at Hinterland Web really understood what we were looking for. Our new website does a great job transmitting what our event is all about!",
       avatar: {
         src: "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/testimonials1.png",
@@ -115,7 +127,6 @@ export const Testimonial17Defaults: Testimonial17Props = {
       companyName: "Beat-Etage, Berlin",
       numberOfStars: 5,
     },
-   
   ],
 };
 
