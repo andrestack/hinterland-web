@@ -37,11 +37,17 @@ const projects = [
     image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/marketing-header.png`,
     url: "https://marketing.hinterlandweb-folio.in/",
   },
+  // {
+  //   title: "Pomona & District Kindergarten",
+  //   description: "Website redesign for local Kindy in Pomona",
+  //   image: `https://pub-31971714d5324882b00b0345130560dd.r2.dev/C%26A_Logo_HI-RES.jpg`,
+  //   url: "https://hinterland-web.github.io/pomona-kindy/",
+  // },
   {
-    title: "Pomona & District Kindergarten",
-    description: "Website redesign for local Kindy in Pomona",
-    image: `https://pub-31971714d5324882b00b0345130560dd.r2.dev/C%26A_Logo_HI-RES.jpg`,
-    url: "https://hinterland-web.github.io/pomona-kindy/",
+    title: "Buckley's Chance",
+    description: "Website showcasing a local Pomona music group",
+    image: `/images/bc-logo-no-bg.png`,
+    url: "https://buckleyschance.net",
   },
   {
     title: "Bear Cave Barber",
