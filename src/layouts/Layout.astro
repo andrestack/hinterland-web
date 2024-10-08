@@ -1,9 +1,7 @@
 ---
-
 import Footer from "../components/elements/Footer.astro";
 import Navbar from "../components/elements/Navbar.astro";
-import {SEO} from "astro-seo";
-
+import { SEO } from "astro-seo";
 
 export interface Props {
   title: string;
@@ -12,16 +10,18 @@ export interface Props {
 }
 
 const { title } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString()
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
-const resolvedImageWithDomain = new URL("/images/cooroora-pic.webp", Astro.site).toString()
+const resolvedImageWithDomain = new URL(
+  "/images/cooroora-pic.webp",
+  Astro.site
+).toString();
 
-const description="Hinterland Web offers premium web design and developement services for local businesses in Noosa Hinterland and beyond. The mission is simple: to help you establish and enhance your online presence, no matter where you're starting from! Contact André today!"
-   
-
+const description =
+  "Hinterland Web offers premium web design and developement services for local businesses in Noosa Hinterland and beyond. The mission is simple: to help you establish and enhance your online presence, no matter where you're starting from! Contact André today!";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -31,25 +31,31 @@ const description="Hinterland Web offers premium web design and developement ser
     <meta name="description" content={description} />
 
     <SEO
-    description={description}
-    canonical={canonicalURL}
-    openGraph={{
-      basic: {
-        title: "Hinterland Web",
-        type:"website",
-        image: resolvedImageWithDomain,
-        url: canonicalURL,
-      },
-    }}
-    extend={{
-      meta: [
-        {name: "keywords", content:"web design, website designer SEO, sunshine coast web design, websites, web agency in Noosa, affordable websites in noosa, world class web design, website, websites near me, web design expert, web developer, pomona web developer, web design Pomona, website development Noosa, local business online presence, affordable web design sunshine coast, professional website services, Hinterland Web portfolio, mobile-friendly websites, custom web solutions, website testimonials, web design pricing, logo design Noosa, branding services Pomona, visual identity solutions, creative graphic design, brand development, bespoke logo creation, business branding, Hinterland Web  portfolio, graphic design testimonials"}
-      ]
-    }}
+      description={description}
+      canonical={canonicalURL}
+      openGraph={{
+        basic: {
+          title: "Hinterland Web",
+          type: "website",
+          image: resolvedImageWithDomain,
+          url: canonicalURL,
+        },
+      }}
+      extend={{
+        meta: [
+          {
+            name: "keywords",
+            content:
+              "web design, website designer SEO, sunshine coast web design, websites, web agency in Noosa, affordable websites in noosa, world class web design, website, websites near me, web design expert, web developer, pomona web developer, web design Pomona, website development Noosa, local business online presence, affordable web design sunshine coast, professional website services, Hinterland Web portfolio, mobile-friendly websites, custom web solutions, website testimonials, web design pricing, logo design Noosa, branding services Pomona, visual identity solutions, creative graphic design, brand development, bespoke logo creation, business branding, Hinterland Web  portfolio, graphic design testimonials",
+          },
+        ],
+      }}
     />
-    
-    
-    <meta name='impact-site-verification' content='40885628-69a1-4177-9671-d7fa6a7769f3'>
+
+    <meta
+      name="impact-site-verification"
+      content="40885628-69a1-4177-9671-d7fa6a7769f3"
+    />
     <title>{title}</title>
 
     <link
@@ -57,70 +63,101 @@ const description="Hinterland Web offers premium web design and developement ser
       rel="stylesheet"
     />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    
   </head>
   <body class="overflow-hidden overflow-y-auto bg-body">
     <Navbar />
     <slot />
-  
+
     <Footer />
-    
-  </body>
-  
-  <script>
-  
+  </body><script>
     function handleThemeToggle() {
-        const switchTheme = document.querySelector(
-          "[data-switch-theme]"
-        ) as HTMLButtonElement;
+      const switchTheme = document.querySelector(
+        "[data-switch-theme]"
+      ) as HTMLButtonElement;
 
-        if (switchTheme) {
-          const initTheme = () => {
-            if (
-              localStorage.getItem("appTheme") === "dark" ||
-              (!("appTheme" in localStorage) &&
-                window.matchMedia("(prefers-color-scheme: dark)").matches)
-            ) {
-              document.documentElement.classList.add("dark");
-            } else {
-              document.documentElement.classList.remove("dark");
-            }
-          };
+      if (switchTheme) {
+        const initTheme = () => {
+          if (
+            localStorage.getItem("appTheme") === "dark" ||
+            (!("appTheme" in localStorage) &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          ) {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+        };
 
-          initTheme();
+        initTheme();
 
-          const toggleTheme = () => {
-            const doc = document.documentElement;
-            if (doc) {
-              if (localStorage.getItem("appTheme")) {
-                if (localStorage.getItem("appTheme") === "light") {
-                  doc.classList.add("dark");
-                  localStorage.setItem("appTheme", "dark");
-                } else {
-                  doc.classList.remove("dark");
-                  localStorage.setItem("appTheme", "light");
-                }
+        const toggleTheme = () => {
+          const doc = document.documentElement;
+          if (doc) {
+            if (localStorage.getItem("appTheme")) {
+              if (localStorage.getItem("appTheme") === "light") {
+                doc.classList.add("dark");
+                localStorage.setItem("appTheme", "dark");
               } else {
-                if (doc.classList.contains("dark")) {
-                  doc.classList.remove("dark");
-                  localStorage.setItem("appTheme", "light");
-                } else {
-                  doc.classList.add("dark");
-                  localStorage.setItem("appTheme", "dark");
-                }
+                doc.classList.remove("dark");
+                localStorage.setItem("appTheme", "light");
+              }
+            } else {
+              if (doc.classList.contains("dark")) {
+                doc.classList.remove("dark");
+                localStorage.setItem("appTheme", "light");
+              } else {
+                doc.classList.add("dark");
+                localStorage.setItem("appTheme", "dark");
               }
             }
-          };
+          }
+        };
 
-          switchTheme.addEventListener("click", toggleTheme);
-        }
+        switchTheme.addEventListener("click", toggleTheme);
       }
+    }
 
-      // Run on initial page load
-      handleThemeToggle();
-
-   
+    // Run on initial page load
+    handleThemeToggle();
   </script>
+  <script>
+    const toggleMenu = document.querySelector(
+      "[data-toggle-nav]"
+    ) as HTMLButtonElement;
+    const navbar = document.querySelector("[data-navbar]") as HTMLDivElement;
+    const overlayNav = document.querySelector(
+      "[data-nav-overlay]"
+    ) as HTMLDivElement;
+    if (toggleMenu) {
+      toggleMenu.addEventListener("click", (e) => {
+        e.preventDefault();
+        if (toggleMenu.getAttribute("data-open-nav") === "false") {
+          toggleMenu.setAttribute("data-open-nav", "true");
+          overlayNav.setAttribute("data-is-visible", "true");
+          document.body.classList.add("!overflow-y-hidden");
+          navbar.style.height = `${navbar.scrollHeight}px`;
+        } else {
+          toggleMenu.setAttribute("data-open-nav", "false");
+          overlayNav.setAttribute("data-is-visible", "false");
+          document.body.classList.remove("!overflow-y-hidden");
+          navbar.style.height = "0px";
+        }
+      });
+
+      navbar.addEventListener("click", () => {
+        toggleMenu.setAttribute("data-open-nav", "false");
+        overlayNav.setAttribute("data-is-visible", "false");
+        document.body.classList.remove("!overflow-y-hidden");
+        navbar.style.height = "0px";
+      });
+
+      overlayNav.addEventListener("click", () => {
+        toggleMenu.setAttribute("data-open-nav", "false");
+        overlayNav.setAttribute("data-is-visible", "false");
+        document.body.classList.remove("!overflow-y-hidden");
+        navbar.style.height = "0px";
+      });
+    }
   </script>
 </html>
 <style is:global>
@@ -130,9 +167,9 @@ const description="Hinterland Web offers premium web design and developement ser
     --color-box: 216 229 207;
     --box-border: 20 49 68;
     --box-sd: 20 49 68 / 0.5;
-	--heading-1:  20 49 68;
-	--heading-2: 20 49 68;
-	--heading-3: 20 49 68;
+    --heading-1: 20 49 68;
+    --heading-2: 20 49 68;
+    --heading-3: 20 49 68;
   }
 
   .dark {
@@ -141,13 +178,12 @@ const description="Hinterland Web offers premium web design and developement ser
     --box-border: 243 244 246/0.1;
     --box-sd: transparent;
 
-	
-	--heading-1:  216 229 207;
-	--heading-2:  216 229 207;
-	--heading-3:  209 213 219;
+    --heading-1: 216 229 207;
+    --heading-2: 216 229 207;
+    --heading-3: 209 213 219;
   }
 
-  html{
+  html {
     scroll-behavior: smooth;
   }
   body {
@@ -155,8 +191,8 @@ const description="Hinterland Web offers premium web design and developement ser
   }
 
   img {
-        content-visibility: auto;
-      }
+    content-visibility: auto;
+  }
 
   [data-toggle-nav][data-open-nav="true"] #line1 {
     transform: translateY(0.375rem) rotate(40deg);
@@ -169,7 +205,6 @@ const description="Hinterland Web offers premium web design and developement ser
     transform: translateY(-0.375rem) rotate(-40deg);
   }
 
-  
   [data-nav-overlay][data-is-visible="true"] {
     visibility: visible;
     display: flex;
