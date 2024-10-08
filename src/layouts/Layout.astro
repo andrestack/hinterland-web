@@ -3,7 +3,7 @@
 import Footer from "../components/elements/Footer.astro";
 import Navbar from "../components/elements/Navbar.astro";
 import {SEO} from "astro-seo";
-import ViewTransitions from "astro/components/ViewTransitions.astro";
+
 
 export interface Props {
   title: string;
@@ -57,7 +57,7 @@ const description="Hinterland Web offers premium web design and developement ser
       rel="stylesheet"
     />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <ViewTransitions />
+    
   </head>
   <body class="overflow-hidden overflow-y-auto bg-body">
     <Navbar />
@@ -68,7 +68,7 @@ const description="Hinterland Web offers premium web design and developement ser
   </body>
   
   <script>
-  document.addEventListener("astro:page-load", () => {
+  
     function handleThemeToggle() {
         const switchTheme = document.querySelector(
           "[data-switch-theme]"
@@ -119,9 +119,7 @@ const description="Hinterland Web offers premium web design and developement ser
       // Run on initial page load
       handleThemeToggle();
 
-      // Re-run on view transitions
-      document.addEventListener('astro:after-swap', handleThemeToggle);
-    });
+   
   </script>
   </script>
 </html>
