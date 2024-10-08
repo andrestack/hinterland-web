@@ -21,13 +21,13 @@ const aboutContent = await getCollection("team")
 
 const { Content } = await aboutContent[0].render()
 
-const description = "Get to know the face behind Hinterland Web! From his upbringing in Portugal through the bustling city of Berlin to the quietness of the idyllic Noosa Hinterland."
+const defaultDescription = "Get to know the face behind Hinterland Web! From his upbringing in Portugal through the bustling city of Berlin to the quietness of the idyllic Noosa Hinterland."
 
 
 
 ---
 
-<Layout title="About" value="about" description={description}>
+<Layout title="About" value="about" description={defaultDescription}>
   <Container>
     <!-- <Sectionhead>
       <Title slot="title">My Story</Title>

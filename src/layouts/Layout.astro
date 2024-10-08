@@ -9,7 +9,7 @@ export interface Props {
   description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
@@ -17,7 +17,7 @@ const resolvedImageWithDomain = new URL(
   Astro.site
 ).toString();
 
-const description =
+const defaultDescription =
   "Hinterland Web offers premium web design and developement services for local businesses in Noosa Hinterland and beyond. The mission is simple: to help you establish and enhance your online presence, no matter where you're starting from! Contact André today!";
 ---
 
@@ -28,10 +28,10 @@ const description =
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/images/cooroora-pic.webp" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
+    <meta name="description" content={description || defaultDescription} />
 
     <SEO
-      description={description}
+      description={description || defaultDescription}
       canonical={canonicalURL}
       openGraph={{
         basic: {

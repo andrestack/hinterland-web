@@ -17,11 +17,11 @@ publishedBlogEntries.sort(function (a, b) {
   return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
 });
 
-const description =
+const defaultDescription =
   "Our blog is a great place to start to understand why we do what we do at Hinterland Web.";
 ---
 
-<Layout title="Blog" value="blog" description={description}>
+<Layout title="Blog" value="blog" description={defaultDescription}>
   <Container>
     <Sectionhead>
       <Title
