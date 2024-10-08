@@ -2,7 +2,7 @@
 {
   "draft": false,
   "title": "What is the Difference Between a Website and a Web App?",
-  "snippet": "In today's digital landscape, the terms \"web application\" and \"website\" are often used interchangeably, but they represent distinct concepts in the world wide web. This article will delve into the key differences between them.",
+  "snippet": "In today's digital landscape, the terms \"web application\" and \"website\" are often used interchangeably, but they represent distinct concepts in the world wide web.",
   "image": {
     "src": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?&fit=crop&w=430&h=240",
     "alt": "frontend master"

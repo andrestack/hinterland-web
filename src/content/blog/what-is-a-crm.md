@@ -2,7 +2,7 @@
 {
   "draft": false,
   "title": "What exactly is a CRM?",
-  "snippet": "Discover why you might desperately need a CRM (even if you don't know it yet!), how to choose the best CRM software for your unique business needs, and the mind-blowing ways it can transform your customer relationships.",
+  "snippet": "Discover why you might desperately need a CRM (even if you don't know it yet!), how to choose the best CRM software for your unique business needs, and how it can transform your customer relationships.",
   "image":
     { "src": "/images/blog-image-crm.png", "alt": "Perfect landing page" },
   "publishDate": "2024-08-01 09:26",

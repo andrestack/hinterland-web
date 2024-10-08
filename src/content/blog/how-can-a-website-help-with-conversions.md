@@ -2,7 +2,7 @@
 {
   "draft": false,
   "title": "How Can a Website Help You Getting more Conversions?",
-  "snippet": "Wondering how a website can help boost your business? On this blog post I am sharing 6 effective strategies that are guaranteed to improve conversion. ",
+  "snippet": "Wondering how a website can help boost your business? Here are 6 effective strategies that are guaranteed to improve conversion. ",
   "image":
     {
       "src": "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/blog-conversions.png",
