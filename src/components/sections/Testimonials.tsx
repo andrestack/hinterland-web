@@ -81,6 +81,31 @@ export const Testimonial17Defaults: Testimonial17Props = {
   testimonials: [
     {
       testimonial:
+        "Our band Buckley's Chance and myself had a great experience working with Andre of Hinterland Web. He was able to transform a couple of loose flyers and sheets into a website we love. Thank you!",
+      avatar: {
+        src: "/images/bc-logo_qld.png",
+        alt: "RP",
+      },
+      name: "Roger Peters",
+      position: "",
+      companyName: "Buckley's Chance, Pomona",
+      numberOfStars: 5,
+    },
+    {
+      testimonial:
+        "So happy we found Andre, he was so helpful, gave clear, accurate instruction in areas I have very little knowledge. Andre has a very professional personable manner, I felt confident I could make the necessary adjustments to grow my business. I would definately recommend his services.",
+      avatar: {
+        src: "https://avatar.iran.liara.run/username?username=Lisa+Batt",
+        alt: "LB",
+      },
+      name: "Lisa B.",
+      position: "",
+      companyName: "",
+      numberOfStars: 5,
+    },
+    
+    {
+      testimonial:
         "André took the time to understand my vision and goals for my website, offering valuable insights and suggestions that enhanced my original ideas. His expertise in marketing strategies was evident, as he crafted a site that not only looks stunning but also effectively communicates my brand message and engages my target audience.",
       avatar: {
         src: "https://pub-ed0f4b8b153c4c809b08926b1d61a25e.r2.dev/bearcavebarber-website-screenshot.png",
