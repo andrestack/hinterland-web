@@ -78,7 +78,7 @@ export const Faq4 = (props: Faq4Props) => {
           </h2>
           <p className="md:text-md text-xl">{footerDescription}</p>
           <a
-            href="https://tidycal.com/silvandre/15-minute-meeting"
+            href="https://api.leadconnectorhq.com/widget/bookings/booking-type-1"
             target="_blank"
           >
             <div className="mt-6 md:mt-8">

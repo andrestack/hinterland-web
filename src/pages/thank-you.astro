@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/sections/container.astro";
+import Sectionhead from "../components/sections/sectionhead.astro";
+---
+
+<Layout
+  title="Thank you for booking an appointment!"
+  value="thank-you"
+  description="Thank you for booking an appointment!"
+>
+  <Container
+    class="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-18"
+  >
+    <Sectionhead>
+      <h2
+        slot="title"
+        class="text-xl font-bold md:mb-6 md:text-7xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600 overflow-visible"
+      >
+        Thanks!
+      </h2>
+      <p slot="desc" class="md:text-md text-xl">
+        We will contact you shortly to confirm your booking request. <br />
+        Send us an email if you have any questions.
+      </p>
+    </Sectionhead>
+  </Container>
+</Layout>
+<script>
+  setTimeout(() => {
+    window.location.href = "/";
+  }, 9000);
+</script>
