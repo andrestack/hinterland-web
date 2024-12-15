@@ -81,6 +81,18 @@ export const Testimonial17Defaults: Testimonial17Props = {
   testimonials: [
     {
       testimonial:
+        "Andre is fantastic to work with. Highly responsive in his communication and enthusiastic! He draws on his technical coding experience but also can design and has an eye for detail. Andre built a web-app for our business, he did so in good timing, great precision and the finished product was delivered above and beyond what we originally had envisioned!",
+      avatar: {
+        src: "/images/crafted-logo-round.png",
+        alt: "Testimonial avatar 2",
+      },
+      name: "Kevin P.",
+      position: "",
+      companyName: "Crafted Finishes, Sunshine Coast",
+      numberOfStars: 5,
+    },
+    {
+      testimonial:
         "Our band Buckley's Chance and myself had a great experience working with Andre of Hinterland Web. He was able to transform a couple of loose flyers and sheets into a website we love. Thank you!",
       avatar: {
         src: "/images/bc-logo_qld.png",
@@ -138,18 +150,6 @@ export const Testimonial17Defaults: Testimonial17Props = {
       name: "André Soares",
       position: "",
       companyName: "ADC, Portugal",
-      numberOfStars: 5,
-    },
-    {
-      testimonial:
-        "Bester Webdesigner, den ich finden konnte. Klarer, sehr freundlicher und professioneller Kontakt, super Service, Design genau, wie ich es wollte :))) Danke!",
-      avatar: {
-        src: "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/testimonials2.png",
-        alt: "Testimonial avatar 2",
-      },
-      name: "Nathan Berg",
-      position: "",
-      companyName: "Beat-Etage, Berlin",
       numberOfStars: 5,
     },
   ],
