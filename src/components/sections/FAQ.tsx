@@ -9,6 +9,7 @@ import {
 import type { ButtonProps } from "@relume_io/relume-ui";
 import { RxPlus } from "react-icons/rx";
 import BtnLink from "../shared/BtnLink.astro";
+import { useState } from "react";
 
 type QuestionsProps = {
   title: string;
@@ -26,7 +27,7 @@ type Props = {
 
 export type Faq4Props = React.ComponentPropsWithoutRef<"section"> &
   Partial<Props>;
-// <span class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
+
 export const Faq4 = (props: Faq4Props) => {
   const {
     heading,
@@ -39,8 +40,9 @@ export const Faq4 = (props: Faq4Props) => {
     ...Faq4Defaults,
     ...props,
   } as Props;
+
   return (
-    <section className="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-24">
+    <section className="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-24 z-[1000]">
       <div className="container mx-auto max-w-lg">
         <div className="mb-12 text-center md:mb-18 lg:mb-20">
           <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600">
@@ -66,8 +68,8 @@ export const Faq4 = (props: Faq4Props) => {
               >
                 {question.title}
               </AccordionTrigger>
-              <AccordionContent className="md:pb-6">
-                {question.answer}
+              <AccordionContent className="md:pb-6 transition-all duration-300 ease-in-out overflow-hidden">
+                <div className="accordion-answer">{question.answer}</div>
               </AccordionContent>
             </AccordionItem>
           ))}
@@ -83,7 +85,6 @@ export const Faq4 = (props: Faq4Props) => {
           >
             <div className="mt-6 md:mt-8">
               <Button {...button}>{button.title}</Button>
-              {/* <BtnLink href="https://tidycal.com/silvandre/15-minute-meeting" text="Book a Free Discovery Call" variant="primary" className="lg:text-2xl sm:text-xl shadow-lg shadow-box-shadow"/> */}
             </div>
           </a>
         </div>
@@ -100,7 +101,7 @@ export const Faq4Defaults: Faq4Props = {
     {
       title: "What services does Hinterland Web offer?",
       answer:
-        "We offer a comprehensive range of web services including website design, web app development, hosting, SEO optimization, business automation, and chatbot integration. Our goal is to be the local expert that provide a one-stop solution for all your digital needs.",
+        "We offer a comprehensive range of web services including website design, web app development, hosting, SEO optimization, business automation, and chatbot integration. Our goal is to be your local expert that provide a one-stop solution for all your digital needs.",
     },
     {
       title:
@@ -136,10 +137,10 @@ export const Faq4Defaults: Faq4Props = {
     },
   ],
   footerHeading: "Still have questions?",
-  footerDescription: "Let's figure out the answers together! Or chat with our AI assistant right there 👉",
+  footerDescription:
+    "Let's figure out the answers together! Or chat with our AI assistant right there 👉",
   button: {
     title: "Get in touch",
-
     variant: "primary",
     className:
       "lg:text-2xl sm:text-xl shadow-lg shadow-box-shadow px-6 py-3 rounded-full bg-primary text-white hover:bg-secondary",

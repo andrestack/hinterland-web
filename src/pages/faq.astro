@@ -6,9 +6,9 @@ import ChatBot from "components/elements/ChatBot.astro";
 const defaultDescription = "If you have questions, we have answers. Otherwise, just get in touch and let's have a chat!";
 
 ---
-<Layout title="Frequently Asked Questions" value="faq" description={defaultDescription}>
+<Layout title="Frequently Asked questions" value="faq" description={defaultDescription}>
     <main>
-        <Faq4 />
+        <Faq4 client:load/>
         <ChatBot />
     </main>
 </Layout>
