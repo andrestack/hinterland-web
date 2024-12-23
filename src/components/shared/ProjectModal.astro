@@ -1,0 +1,125 @@
+---
+import Container from "../shared/Container.astro";
+---
+
+<section
+  id="project-modal"
+  class="fixed inset-0 m-0 bg-black bg-opacity-50 z-50 items-center justify-center h-full flex hidden"
+>
+  <div
+    class="relative bg-gradient-to-br from-tertiary from-60% to to-primary rounded-lg p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto mx-4"
+  >
+    <button
+      id="close-modal"
+      class="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    <div id="modal-content" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Content will be dynamically inserted here -->
+    </div>
+  </div>
+</section>
+
+<script>
+  declare global {
+    interface Window {
+      openModal: (project: Project) => void;
+    }
+  }
+
+  interface Project {
+    image: string;
+    title: string;
+    description: string;
+    link: string;
+    technologies: string[];
+    features: string[];
+    position: string;
+  }
+
+  let currentProject: Project | null = null;
+
+  function openModal(project: Project) {
+    const modal = document.getElementById("project-modal");
+    const modalContent = document.getElementById("modal-content");
+
+    if (!modal || !modalContent) return;
+    currentProject = project;
+
+    modalContent.innerHTML = `
+        <div class="space-y-4">
+          <div class="flex justify-between items-start">
+            <h2 class="text-2xl font-bold">${project.title}</h2>
+            
+          </div>
+          <div class="w-full h-48 rounded-lg" style="background-image: url('${project.image}'); background-position: ${project.position}; background-size: cover;"></div>
+           <div>
+            <h3 class="text-lg font-semibold mb-2">Key Features</h3>
+            <ul class="list-disc list-inside space-y-1">
+              ${project.features.map((feature: string) => `<li class="text-gray-600">${feature}</li>`).join("")}
+            </ul>
+          </div>
+          
+          <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="inline-block px-4 py-2 bg-primary text-white rounded-md hover:bg-blue-700 transition-colors duration-300">
+            View Project
+          </a>
+        </div>
+        <div class="space-y-4">
+          <div>
+            <h3 class="text-lg font-semibold mb-2">Technologies Used</h3>
+            <p class="text-blue-600">${project.technologies.join(", ")}</p>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Client's Goals:</h3>
+          <p class="text-gray-600">${project.description}</p>
+         
+        </div>
+      `;
+
+    modal.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("project-modal");
+    if (!modal) return;
+    modal.classList.add("hidden");
+    document.body.style.overflow = "";
+  }
+
+  const closeButton = document.getElementById("close-modal");
+  if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+  }
+
+  document.getElementById("close-modal")?.addEventListener("click", closeModal);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeModal();
+    }
+  });
+
+  document
+    .getElementById("project-modal")
+    ?.addEventListener("click", (event) => {
+      if (event.target === event.currentTarget) {
+        closeModal();
+      }
+    });
+
+  // Expose the openModal function globally
+  window.openModal = openModal;
+</script>

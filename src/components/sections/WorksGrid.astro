@@ -1,0 +1,65 @@
+---
+import ProjectModal from "../shared/ProjectModal.astro";
+import { projects } from "../../utils/work";
+import Container from "../shared/Container.astro";
+import Works from "components/cards/Works.astro";
+
+// const works = [
+//   {
+//     title: "Project 1",
+//     image: "/path/to/image1.jpg",
+//     description: "This is a description of Project 1.",
+//     link: "https://project1.com",
+//     technologies: ["React", "Node.js", "MongoDB"],
+//     features: ["Feature 1", "Feature 2", "Feature 3"]
+//   },
+//   // Add more projects as needed
+// ];
+---
+
+<Container>
+  <div
+    class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+    data-projects={JSON.stringify(projects)}
+  >
+    {
+      projects.map((project, index) => (
+        <div
+          class="cursor-pointer"
+          onclick={`openModal(${JSON.stringify(project)})`}
+        >
+          <Works
+            title={project?.title}
+            description={project?.description}
+            image={project?.image}
+            position={project?.position}
+            url={project?.link}
+          />
+        </div>
+      ))
+    }
+  </div>
+</Container>
+
+<ProjectModal />
+
+<script>
+  import type { Project } from "../../utils/work";
+
+  document.addEventListener("astro:page-load", () => {
+    // Using the HTMLElement type assertion to access the dataset property
+    const container = document.querySelector("[data-projects]") as HTMLElement;
+    const projects: Project[] = JSON.parse(container?.dataset.projects || "[]");
+
+    // Selecting all elements with the class 'cursor-pointer'
+    const workItems = document.querySelectorAll(".cursor-pointer");
+    workItems.forEach((item, index) => {
+      // Adding an event listener to each item to handle clicks
+      item.addEventListener("click", () => {
+        if (window.openModal) {
+          window.openModal(projects[index]);
+        }
+      });
+    });
+  });
+</script>
