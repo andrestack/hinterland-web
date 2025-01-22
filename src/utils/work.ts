@@ -64,7 +64,7 @@ const projects: Project[] = [
   },
   {
     title: "Pomona & District Kindergarten",
-    description: "As part of my volunteer work for the local community Kindy, I redesigned the Kindys website to provide a more modern and professional look. The website now provides all the necessary information for parents to make an informed decision when enrolling their children. And is the result of productive feedback and collaborations with the executive committee. While the design was not implemented, the feedback loops provided a much needed updated on the current website, which the team decided to keep.",
+    description: "As part of my volunteer work for the local community Kindy, I redesigned the Kindys website to provide a more modern and professional look. The website is the result of productive feedback and collaborations with the executive committee.",
     image: "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/Mockups_kindy.png",
     link: "https://hinterland-web.github.io/pomona-kindy/",
     technologies: ["Nextjs", "Tailwind CSS", "Relume UI", "Deployed on Github Pages"],

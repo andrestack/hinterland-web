@@ -101,7 +101,7 @@ export const Faq4Defaults: Faq4Props = {
     {
       title: "What services does Hinterland Web offer?",
       answer:
-        "We offer a comprehensive range of web services including website design, web app development, hosting, SEO optimization, business automation, and chatbot integration. Our goal is to be your local expert that provide a one-stop solution for all your digital needs.",
+        "We offer a comprehensive range of web services including website design, web app development, hosting, SEO optimization, business automation, and chatbot integration. Our goal is to be your local expert that provides a one-stop solution for all your digital needs.",
     },
     {
       title:
@@ -128,12 +128,63 @@ export const Faq4Defaults: Faq4Props = {
     {
       title: "How long does it take to get my website up and running?",
       answer:
-        "It will always depend on the size of your project, if you have any design files already, your cooperation  and your timeline, if it is just a simple landing page with relevant call-to-action it can be done withing a week.",
+        "It will always depend on the size of your project, if you have any design files already, your cooperation and your timeline. If it is just a simple landing page with relevant call-to-action, it can be done within a week.",
     },
     {
       title: "Do you offer ongoing support after my website is launched?",
       answer:
         "Yes, we offer ongoing support and maintenance services starting at $50 per month. But first 3 to 6 months are free. This includes website hosting, content update, and regular checks to ensure your site continues to perform optimally.",
+    },
+    {
+      title: "Can you help with CRM integration for my business?",
+      answer:
+        "Yes, we specialize in CRM integration using platforms like Go High Level. This includes automating customer follow-ups, managing leads, and streamlining your sales processes to save you time and increase efficiency.",
+    },
+    {
+      title: "How does automation benefit my business?",
+      answer:
+        "Automation allows you to save time by reducing manual tasks like booking confirmations, follow-ups, and lead nurturing. It ensures no leads slip through the cracks, improves customer experience, and allows you to focus on growing your business.",
+    },
+    {
+      title: "What industries do you specialize in?",
+      answer:
+        "We primarily work with tradespeople, real estate professionals, and other service-based businesses. However, we are open to projects from various industries that need tailored solutions.",
+    },
+    {
+      title: "Can you create custom software solutions for my business?",
+      answer:
+        "Yes, we offer bespoke SaaS solutions, such as quote calculators, project management tools, and client portals. These are tailored to your specific needs and integrate seamlessly with your existing workflows.",
+    },
+    {
+      title: "Do you offer SEO services?",
+      answer:
+        "Yes, we provide both guided and fully managed SEO services. Whether you need AI-powered tools to guide your strategy or a hands-off solution, we ensure your business ranks higher in local searches and attracts more traffic.",
+    },
+    {
+      title: "What's the investment for your services?",
+      answer:
+        "Our services start at $1,500 for basic website design and go up to $7,500+ for comprehensive packages that include CRM integration, SaaS solutions, and advanced automation workflows.",
+    },
+    {
+      title: "Can you set up an AI chatbot for my business?",
+      answer:
+        "Yes, we can integrate AI chatbots to handle customer queries, booking requests, and lead qualification. These bots provide 24/7 support and integrate directly with your CRM for seamless communication.",
+    },
+    {
+      title:
+        "What is the difference between guided and fully managed SEO services?",
+      answer:
+        "With guided SEO, we provide tools and insights to help you improve your rankings yourself. Fully managed SEO is hands-off, where we handle everything from keyword research to content creation and optimization.",
+    },
+    {
+      title: "Can I scale my website as my business grows?",
+      answer:
+        "Absolutely! All our websites are built to scale. Whether you need additional features like a customer portal, SaaS tool, or e-commerce functionality, we can expand your site as your business grows.",
+    },
+    {
+      title: "Do you offer training for the tools you provide?",
+      answer:
+        "Yes, we offer personalized training via Loom recordings and a 1-month onboarding plan to ensure you and your team are confident using your new tools.",
     },
   ],
   footerHeading: "Still have questions?",
