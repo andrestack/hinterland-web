@@ -1,14 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import {Faq4} from "../components/sections/FAQ"
-import ChatBot from "components/elements/ChatBot.astro";
+import { Faq4 } from "../components/sections/FAQ";
+import ChatBot2 from "components/elements/ChatBot.astro";
 
-const defaultDescription = "If you have questions, we have answers. Otherwise, just get in touch and let's have a chat!";
-
+const defaultDescription =
+  "If you have questions, we have answers. Otherwise, just get in touch and let's have a chat!";
 ---
-<Layout title="Frequently Asked questions" value="faq" description={defaultDescription}>
-    <main>
-        <Faq4 client:load/>
-        <ChatBot />
-    </main>
+
+<Layout
+  title="Frequently Asked questions"
+  value="faq"
+  description={defaultDescription}
+>
+  <main>
+    <Faq4 client:load />
+    <ChatBot2 />
+  </main>
 </Layout>
