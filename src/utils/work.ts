@@ -45,14 +45,14 @@ const projects: Project[] = [
     features: ["Responsive Design", "Fast Loading", "SEO Optimized", "Onbrand Design", "Blog", "Google Reviews"],
     position:"center",
   },
-  // {
-  //   title: "Pohsso Wellness",
-  //   description: "Soon launching a website for a masseuse friend in Portugal",
-  //   image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/wellness-screenshot.png`,
-  //   link: "https://wellness.hinterlandweb-folio.in/",
-  //   technologies: ["Astro", "Tailwind CSS"],
-  //   features: ["Responsive Design", "Fast Loading", "SEO Optimized"],
-  // },
+  {
+    title: "Custom Registration Form",
+    description: "Developed a registration form for a dance and drum retreat in Portugal, called Aldeia Djembe Camp. Data is submitted to a database and then displayed in an admin dashboard.",
+    image: `/images/adc-form.png`,
+    link: "https://formulario.aldeia-djembe-camp.com/",
+    technologies: ["Nextjs", "MongoDB", "React Hook Form", "Tailwind CSS"],
+    features: ["Custom Development", "Full Stack", "Database Integration"],
+  },
   {
     title: "Automation Agency",
     description: "This is a work in progress for my agency. It is a full stack template for any SaaS or product website. It showcases some of the features we can integrate on a fully custom website.",

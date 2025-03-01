@@ -1,13 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Container from "../components/sections/container.astro";
 import Hero from "../components/sections/Hero.astro";
-import Services from "../components/sections/Services.astro";
 import AboutUs from "../components/sections/AboutUs.astro";
+import Services from "../components/sections/Services.astro";
 import HowItWorks from "../components/sections/HowItWorks.astro";
-import CTA from "../components/sections/CTA.astro";
-import OurWork from "../components/sections/OurWork.astro";
-import { Testimonial17 } from "components/sections/Testimonials";
+import Testimonials from "../components/sections/testimonials.astro";
 import WorksGrid from "../components/sections/WorksGrid.astro";
+
 const description =
   "Premium web design and developement services for local businesses in Noosa Hinterland and beyond.";
 //The mission is simple: to help you establish and enhance your online presence, no matter where you're starting from! Contact André today!"
@@ -20,12 +20,10 @@ const description =
 >
   <main class="flex flex-col gap-y-24 md:gap-y-32 overflow-hidden">
     <Hero />
-    <Testimonial17 />
     <Services />
-    <OurWork />
-
+    <Testimonials />
+    <WorksGrid />
     <AboutUs />
     <HowItWorks />
-    <CTA />
   </main>
 </Layout>

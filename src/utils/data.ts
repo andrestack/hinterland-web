@@ -11,9 +11,9 @@ const services = [
   },
   {
     id: "custom-web-apps",
-    title: "Custom Web Apps & CRM",
+    title: "Custom Applications",
     description:
-      "We can help you turn your ideas, be it a user dashboard or a project management tool, into fully functioning web application. We can also help you integrate a full blown CRM system to help you manage your clients and projects.",
+      "We can help you turn your ideas into fully functioning web and mobile applications, be it a user dashboard a project management tool, or a tool leveraging the latest AI technology.",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
     <path fill="black" d="M5.346 19.5v-7.115h-2v-1h5v1h-2V19.5zm0-10.885V4.5h1v4.116zm4.154 0v-1h2V4.5h1v3.116h2v1zm2 10.885v-8.115h1V19.5zm6.154 0v-3.116h-2v-1h5v1h-2V19.5zm0-6.884V4.5h1v8.116z" />
   </svg>`,
@@ -42,7 +42,7 @@ const services = [
     id: "seo",
     title: "SEO",
     description:
-      "Be found on Google! We help you outline a strategy so that you rank higher in search results with your brand new website and monitor the results to make sure we are on the right track.",
+      "Be found on Google! We help you outline a strategy so that you rank higher in search results with your brand new website and monitor the results to make sure we are on the right track. We offer fully managed SEO services, or we can help you set up your own tools to monitor your own SEO.",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
     <path fill="black" d="M3 20.077V4.616q0-.691.463-1.153T4.615 3H14.6q-.061.25-.071.49t-.006.51H4.616q-.231 0-.424.192T4 4.615v13.03L5.65 16h13.735q.23 0 .423-.192t.192-.423V8.342q.287-.067.527-.155q.24-.087.473-.225v7.423q0 .69-.462 1.153T19.385 17H6.077zM4 4.616v12.769V4zm15 1.846q-1.038 0-1.77-.731t-.73-1.77t.73-1.769t1.77-.73t1.77.73t.73 1.77t-.73 1.769t-1.77.73" />
   </svg>`,
@@ -50,12 +50,13 @@ const services = [
 
   {
     id: "automation",
-    title: "AI Automation",
+    title: "CRM & Automation",
     description:
-      "Experience what automated workflows can do for your business, saving you time to focus on growing your business: from chatbots that can help you engage with your customers 24/7, to client onboarding and nurturing done with a click.",
+      "A website only live to its full potential when it has proper systems in place and a CRM does extactly that: Experience what automated workflows can do for your business, saving you time to focus on growing your business: from chatbots that can help you engage with your customers 24/7, to client onboarding and nurturing done with a click.",
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
     <path fill="black" d="M5.5 12.05q0 .477.07.96q.068.484.232.956q.067.213-.015.408t-.266.274q-.188.085-.383.009t-.263-.29q-.2-.555-.288-1.146T4.5 12.05q0-3.139 2.19-5.344T12 4.5h1.387L11.64 2.754q-.14-.14-.15-.344t.15-.364t.354-.16t.354.16l2.388 2.389q.243.242.243.565t-.242.566l-2.389 2.388q-.14.14-.344.15t-.364-.15t-.16-.354t.16-.354L13.387 5.5H12q-2.711 0-4.606 1.907T5.5 12.05m13-.1q0-.477-.07-.96q-.068-.484-.232-.955q-.067-.214.016-.409t.265-.274q.188-.085.374-.009q.185.076.253.29q.2.556.297 1.146t.097 1.171q0 3.139-2.19 5.344T12 19.5h-1.386l1.745 1.746q.141.14.15.345q.01.203-.15.363q-.159.16-.353.16t-.354-.16l-2.388-2.389Q9.02 19.324 9.02 19t.242-.565l2.389-2.389q.14-.14.344-.15t.364.15t.16.354t-.16.354L10.614 18.5H12q2.712 0 4.606-1.907T18.5 11.95" />
   </svg>`,
+    url: "/blog/what-is-a-crm",
   },
 ];
 

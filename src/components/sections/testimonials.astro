@@ -1,0 +1,63 @@
+---
+import { testimonials } from "@/config/landing";
+import { Image } from "astro:assets";
+import HeaderSection from "./header-section.astro";
+import { BiSolidStar } from "react-icons/bi";
+---
+
+<section
+  class="px-[5%] py-0 md:py-24 lg:py-18 text-heading-1 dark:text-tertiary"
+>
+  <div class="space-y-10 md:space-y-12">
+    <div class="mb-12 text-center md:mb-18 lg:mb-20">
+      <h2 class="md:text-md text-5xl font-black">What clients are saying:</h2>
+    </div>
+
+    <div class="columns-1 gap-6 space-y-6 md:columns-2 lg:columns-3">
+      {
+        testimonials.map((item) => (
+          <div class="break-inside-avoid-column">
+            <div class="flex w-full flex-col items-start justify-between rounded-lg border border-secondary dark:border-tertiary p-6 md:p-8">
+              <div class="mb-5 md:mb-6">
+                <div class="mb-6 flex">
+                  {[1, 2, 3, 4, 5].map((_, i) => (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      class="mr-1 size-6 text-primary dark:text-tertiary"
+                    >
+                      <path d="M12 1l3.22 6.527 7.78.953-5.64 5.5 1.33 7.76L12 18.354 5.31 21.74l1.33-7.76-5.64-5.5 7.78-.953L12 1z" />
+                    </svg>
+                  ))}
+                </div>
+                <blockquote class="md:text-md text-gray-700 dark:text-tertiary">
+                  "{item.review}"
+                </blockquote>
+              </div>
+              <div class="flex w-full flex-col items-start text-left md:w-fit md:flex-row md:items-center">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={48}
+                  height={48}
+                  class="mb-4 mr-0 size-12 min-h-12 min-w-12 rounded-full object-cover border dark:border-tertiary md:mb-0 md:mr-4"
+                />
+                <div>
+                  <p class="font-semibold text-gray-900 dark:text-tertiary">
+                    {item.name}
+                  </p>
+                  {item.job && (
+                    <p class="text-gray-500 dark:text-tertiary/80">
+                      {item.job}
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

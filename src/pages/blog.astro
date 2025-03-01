@@ -2,10 +2,8 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Container from "../components/sections/container.astro";
-import Sectionhead from "../components/sections/sectionhead.astro";
-import Title from "../components/shared/Title.astro";
-import Paragraph from "../components/shared/Paragraph.astro";
-import Subtitle from "../components/shared/Subtitle.astro";
+import HeaderSection from "../components/sections/header-section.astro";
+import { Image } from "astro:assets";
 
 // Filter blog entries with 'draft: false' & date before current date
 const publishedBlogEntries = await getCollection("blog", ({ data }) => {
@@ -21,77 +19,74 @@ const defaultDescription =
   "Our blog is a great place to start to understand why we do what we do at Hinterland Web.";
 ---
 
-<Layout title="Welcome to our Blog of Knowledge" value="blog" description={defaultDescription}>
+<Layout
+  title="Welcome to our Blog of Knowledge"
+  value="blog"
+  description={defaultDescription}
+>
   <Container>
-    <Sectionhead>
-      <Title
-        slot="title"
-        className="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600"
-        >Welcome to Our Blog</Title
+    <div class="pt-16 md:pt-24 mt-24 text-left">
+      <HeaderSection
+        title="Welcome to Our Knowledge Base"
+        subtitle="Discover insights about web development, design, and digital strategy. This is a collection of articles that intend to clarify all things about building an online presence"
+      />
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mt-12 md:mt-16"
       >
-      <Paragraph slot="desc">
-        This is a collection of articles that intend to clarify all things about
-        building an online presence
-      </Paragraph>
-    </Sectionhead>
-    <main class="mt-16">
-      <ul class="grid gap-16 max-w-4xl mx-auto">
         {
-          publishedBlogEntries.map((blogPostEntry, index) => (
-            <li>
-              <a href={`/blog/${blogPostEntry.slug}`}>
-                <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
-                  <img
-                    src={blogPostEntry.data.image.src}
-                    alt={blogPostEntry.data.image.alt}
-                    sizes="(max-width: 800px) 100vw, 800px"
-                    width={430}
-                    height={240}
-                    loading={index <= 2 ? "eager" : "lazy"}
-                    decoding={index <= 2 ? "sync" : "async"}
-                    class="w-full rounded-md object-cover object-center bg-white"
-                  />
-                  <div>
-                    <span class="text-primary uppercase tracking-wider text-sm font-medium">
-                      {blogPostEntry.data.category}
-                    </span>
-
-                    <Subtitle class="leading-snug tracking-tight mt-1 ">
-                      {blogPostEntry.data.title}
-                    </Subtitle>
-
-                    <div class="flex gap-2 mt-3">
-                      <span class="text-gray-500">
-                        {blogPostEntry.data.author}
-                      </span>
-                      <span class="text-gray-500">• </span>
-                      <time
-                        class="text-gray-500"
-                        datetime={blogPostEntry.data.publishDate.toISOString()}
-                      >
-                        {blogPostEntry.data.publishDate.toDateString()}
-                      </time>
-                    </div>
-                    <Paragraph>{blogPostEntry.data.snippet}</Paragraph>
-                  </div>
-                  <meta
-                    property="og:image"
-                    content={blogPostEntry.data.image.src}
-                  />
-                  <meta
-                    property="og:title"
-                    content={blogPostEntry.data.title}
-                  />
-                  <meta
-                    property="og:description"
-                    content={blogPostEntry.data.snippet}
-                  />
-                </div>
+          publishedBlogEntries.map((post) => (
+            <article class="group space-y-4">
+              <a
+                href={`/blog/${post.slug}`}
+                class="block aspect-[16/9] group-hover:-translate-y-2 group-hover:shadow-xl transition duration-300"
+              >
+                <img
+                  src={post.data.image.src}
+                  alt={post.data.image.alt}
+                  class="w-full h-full object-cover rounded-xl bg-white dark:bg-secondary"
+                  width={720}
+                  height={405}
+                  transition:name={`img-${post.slug}`}
+                />
               </a>
-            </li>
+
+              <div class="flex items-center justify-between">
+                <span
+                  class="text-sm font-medium text-primary dark:text-tertiary uppercase"
+                  transition:name={`category-${post.slug}`}
+                >
+                  {post.data.category}
+                </span>
+                <time
+                  class="text-sm font-medium text-gray-500 dark:text-tertiary"
+                  datetime={post.data.publishDate.toISOString()}
+                  transition:name={`date-${post.slug}`}
+                >
+                  {post.data.publishDate.toDateString()}
+                </time>
+              </div>
+
+              <div>
+                <a href={`/blog/${post.slug}`} class="group-hover:underline">
+                  <h2
+                    class="font-heading text-xl md:text-2xl leading-snug line-clamp-3 dark:text-tertiary"
+                    transition:name={`title-${post.slug}`}
+                  >
+                    {post.data.title}
+                  </h2>
+                </a>
+                <p
+                  class="mt-2 text-gray-500 dark:text-tertiary line-clamp-2"
+                  transition:name={`snippet-${post.slug}`}
+                >
+                  {post.data.snippet}
+                </p>
+              </div>
+            </article>
           ))
         }
-      </ul>
-    </main>
+      </div>
+    </div>
   </Container>
 </Layout>
