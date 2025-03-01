@@ -1,0 +1,99 @@
+---
+import { cn } from "@/lib/utils";
+import type { InfoLdg } from "@/types";
+import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+
+interface Props {
+  reverse?: boolean;
+}
+
+const { reverse } = Astro.props;
+
+const ctaImage = "/images/how-it-works-md-blue.png";
+
+const ctaData = {
+  title: "Ready to Start Your Project?",
+  description:
+    "Let's work together to create a stunning website that perfectly represents your brand and engages your audience.",
+  image: ctaImage,
+  list: [
+    {
+      icon: "lucide:check-circle",
+      title: "Free Consultation",
+      description:
+        "Schedule a no-obligation discovery call to discuss your needs",
+    },
+    {
+      icon: "lucide:clock",
+      title: "Quick Turnaround",
+      description: "Get your website up and running in just a few weeks",
+    },
+    {
+      icon: "lucide:headphones",
+      title: "Ongoing Support",
+      description: "Dedicated support and maintenance after launch",
+    },
+  ],
+} satisfies InfoLdg;
+
+type ListItem = (typeof ctaData.list)[number];
+---
+
+<div class="py-16 sm:py-20">
+  <div
+    class="mx-auto grid max-w-7xl gap-10 px-4 sm:gap-16 sm:px-6 lg:grid-cols-2 lg:items-center lg:px-8"
+  >
+    <div class={cn(reverse ? "lg:order-2" : "lg:order-1")}>
+      <h2
+        class="font-black text-5xl text-secondary dark:text-tertiary md:text-4xl lg:text-[40px]"
+      >
+        {ctaData.title}
+      </h2>
+      <p class="mt-6 text-lg text-muted dark:text-muted-foreground dark:text-tertiary">
+        {ctaData.description}
+      </p>
+      <dl class="mt-6 space-y-4 leading-7">
+        {
+          ctaData.list.map((item) => (
+            <div class="relative pl-8">
+              <dt class="font-semibold text-lg text-primary">
+                <Icon
+                  name={item.icon}
+                  class="absolute left-0 top-1 size-5 stroke-primary dark:stroke-white"
+                />
+                <span>{item.title}</span>
+              </dt>
+              <dd class="text-muted dark:text-muted-foreground dark:text-tertiary">
+                {item.description}
+              </dd>
+            </div>
+          ))
+        }
+      </dl>
+      <div class="mt-8">
+        <a
+          href="https://api.leadconnectorhq.com/widget/bookings/booking-type-1"
+          class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-tertiary hover:text-primary focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2"
+        >
+          Get Started
+        </a>
+      </div>
+    </div>
+    <div
+      class={cn(
+        "rounded-xl overflow-hidden border border-primary/10 dark:border-white/10 lg:-m-4",
+        reverse ? "order-1" : "order-2"
+      )}
+    >
+      <div class="relative aspect-video">
+        <img
+          src={ctaData.image}
+          alt={ctaData.title}
+          class="size-full object-cover object-center"
+          loading="eager"
+        />
+      </div>
+    </div>
+  </div>
+</div>
