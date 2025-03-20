@@ -99,92 +99,72 @@ export const Faq4Defaults: Faq4Props = {
     "Here you can find answers to some of our most frequently asked questions. Hopefully it will help you better understand how our business works! If not feel free to chat with our AI assistant below.",
   questions: [
     {
-      title: "What services does Hinterland Web offer?",
-      answer:
-        "We offer a comprehensive range of web services including website design, web app development, hosting, SEO optimization, business automation, and chatbot integration. Our goal is to be your local expert that provides a one-stop solution for all your digital needs.",
+        "Question":"What services does Hinterland Web offer?",
+        "Answer":"We provide tailored digital solutions, including website design, web applications, hosting, local SEO, CRM setup, and business automation. We focus on helping small businesses and solo traders streamline their online presence and customer management."
     },
     {
-      title:
-        "I'm a small business owner/solo trader. Can you help with my website?",
-      answer:
-        "Absolutely! We specialize in creating websites for small businesses and solo traders like hairdressers, tradespeople, and coffee shop owners. We understand the unique needs of local businesses and tailor our services to help you establish a strong online presence.",
+        "Question":"I'm a small business owner or solo trader. Can you help with my website?",
+        "Answer":"Yes! We specialize in websites for small businesses, tradespeople, and service providers. Whether you need a simple landing page, an online booking system, or a full-featured website, we make the process easy and effective."
     },
     {
-      title:
-        "How can a website help my small business compete with larger companies?",
-      answer:
-        "A well-designed website levels the playing field, allowing you to showcase your products or services professionally. With our SEO services, you can improve your visibility in local searches. Plus, features like automation and chatbots can help you provide 24/7 customer service, matching the capabilities of larger businesses.",
+        "Question":"How can a website help my small business compete with larger companies?",
+        "Answer":"A well-optimized website helps you compete with larger companies by improving your local visibility, automating client interactions, and providing a professional online presence that builds trust and drives more leads."
     },
     {
-      title: "Do you serve businesses outside of the Sunshine Coast?",
-      answer:
-        "While we primarily serve the Sunshine Coast area, we're open to discussing projects from other locations. Our local focus allows us to provide personalized service and understand the specific needs of businesses in our community.",
+        "Question":"Do you serve businesses outside of the Sunshine Coast?",
+        "Answer":"While we are based on the Sunshine Coast, we work with businesses across Australia. Our personalized approach ensures that we tailor solutions for your specific industry and market needs, regardless of location."
     },
     {
-      title: "What's your process for creating a website?",
-      answer:
-        "Our process is straightforward and client-focused. It begins with a Discovery Call to understand your needs and filling out a questionnaire together, followed by sending you a detailed proposal. Once payment is arranged, we create a project draft. We then schedule a feedback call for any necessary changes before launching your site.",
+        "Question":"What's your process for creating a website?",
+        "Answer":"We start with a discovery call to understand your needs, followed by a detailed proposal. Once approved, we design and develop your site, incorporating your feedback before launching. We ensure a smooth process with minimal disruption to your business."
     },
     {
-      title: "How long does it take to get my website up and running?",
-      answer:
-        "It will always depend on the size of your project, if you have any design files already, your cooperation and your timeline. If it is just a simple landing page with relevant call-to-action, it can be done within a week.",
+        "Question":"How long does it take to get my website up and running?",
+        "Answer":"Timelines depend on the project size and complexity. A simple landing page can be completed in under a week, while more advanced projects with integrations or automation features may take a few weeks."
     },
     {
-      title: "Do you offer ongoing support after my website is launched?",
-      answer:
-        "Yes, we offer ongoing support and maintenance services starting at $50 per month. But first 3 to 6 months are free. This includes website hosting, content update, and regular checks to ensure your site continues to perform optimally.",
+        "Question":"Do you offer ongoing support after my website is launched?",
+        "Answer":"Yes, we provide ongoing support, including hosting, updates, and performance monitoring. Our maintenance plans start at $50\/month, with the first 3-6 months free, depending on your package."
     },
     {
-      title: "Can you help with CRM integration for my business?",
-      answer:
-        "Yes, we specialize in CRM integration using platforms like Go High Level. This includes automating customer follow-ups, managing leads, and streamlining your sales processes to save you time and increase efficiency.",
+        "Question":"Can you help with CRM integration for my business?",
+        "Answer":"Yes, we integrate CRMs like Go High Level to help you manage customer interactions, automate follow-ups, and improve your sales pipeline. This ensures no lead is lost and that your business runs efficiently."
     },
     {
-      title: "How does automation benefit my business?",
-      answer:
-        "Automation allows you to save time by reducing manual tasks like booking confirmations, follow-ups, and lead nurturing. It ensures no leads slip through the cracks, improves customer experience, and allows you to focus on growing your business.",
+        "Question":"How does automation benefit my business?",
+        "Answer":"Automation streamlines repetitive tasks like appointment scheduling, email follow-ups, and quote generation. It reduces human error, saves time, and ensures better customer engagement without requiring manual effort."
     },
     {
-      title: "What industries do you specialize in?",
-      answer:
-        "We primarily work with tradespeople, real estate professionals, and other service-based businesses. However, we are open to projects from various industries that need tailored solutions.",
+        "Question":"What industries do you specialize in?",
+        "Answer":"We specialize in trades, real estate, salons, and service-based businesses but work with any industry that requires practical digital solutions to improve workflow and customer acquisition."
     },
     {
-      title: "Can you create custom software solutions for my business?",
-      answer:
-        "Yes, we offer bespoke SaaS solutions, such as quote calculators, project management tools, and client portals. These are tailored to your specific needs and integrate seamlessly with your existing workflows.",
+        "Question":"Can you create custom software solutions for my business?",
+        "Answer":"Yes, we build custom SaaS tools like quote calculators, customer portals, and lead tracking systems. These solutions help businesses automate pricing, data collection, and customer interactions."
     },
     {
-      title: "Do you offer SEO services?",
-      answer:
-        "Yes, we provide both guided and fully managed SEO services. Whether you need AI-powered tools to guide your strategy or a hands-off solution, we ensure your business ranks higher in local searches and attracts more traffic.",
+        "Question":"Do you offer SEO services?",
+        "Answer":"Yes, we offer both DIY-guided SEO and fully managed SEO. Whether you want insights and tools to improve your rankings yourself or prefer a hands-off approach where we handle everything, we have solutions to fit your needs."
     },
     {
-      title: "What's the investment for your services?",
-      answer:
-        "Our services start at $1,500 for basic website design and go up to $7,500+ for comprehensive packages that include CRM integration, SaaS solutions, and advanced automation workflows.",
+        "Question":"What's the investment for your services?",
+        "Answer":"Pricing starts at $1,500 for basic website design and scales up based on complexity. Full-service packages, including CRM and automation, range from $3,000 to $7,500+. We also offer payment plans for qualifying businesses."
     },
     {
-      title: "Can you set up an AI chatbot for my business?",
-      answer:
-        "Yes, we can integrate AI chatbots to handle customer queries, booking requests, and lead qualification. These bots provide 24/7 support and integrate directly with your CRM for seamless communication.",
+        "Question":"Can you set up an AI chatbot for my business?",
+        "Answer":"Yes, we can integrate AI chatbots that handle inquiries, automate bookings, and qualify leads. These chatbots work 24\/7, freeing up your time and ensuring you never miss a potential customer."
     },
     {
-      title:
-        "What is the difference between guided and fully managed SEO services?",
-      answer:
-        "With guided SEO, we provide tools and insights to help you improve your rankings yourself. Fully managed SEO is hands-off, where we handle everything from keyword research to content creation and optimization.",
+        "Question":"What is the difference between guided and fully managed SEO services?",
+        "Answer":"Guided SEO provides tools and insights so you can improve your rankings yourself, while fully managed SEO means we handle everything\u2014from keyword research to content creation and site optimization."
     },
     {
-      title: "Can I scale my website as my business grows?",
-      answer:
-        "Absolutely! All our websites are built to scale. Whether you need additional features like a customer portal, SaaS tool, or e-commerce functionality, we can expand your site as your business grows.",
+        "Question":"Can I scale my website as my business grows?",
+        "Answer":"Yes! Our websites are built to grow with your business. Whether you want to add e-commerce, a customer portal, or a subscription model, we can expand your site\u2019s capabilities as needed."
     },
     {
-      title: "Do you offer training for the tools you provide?",
-      answer:
-        "Yes, we offer personalized training via Loom recordings and a 1-month onboarding plan to ensure you and your team are confident using your new tools.",
+        "Question":"Do you offer training for the tools you provide?",
+        "Answer":"Yes, we provide step-by-step training through video tutorials and a structured onboarding process to ensure you and your team can confidently use your website and digital tools."
     },
   ],
   footerHeading: "Still have questions?",
