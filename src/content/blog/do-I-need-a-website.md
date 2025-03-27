@@ -8,7 +8,7 @@
       "src": "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/laptop-mock-up-me.png",
       "alt": "Do I need A Website?",
     },
-  "publishDate": "2024-07-03 13:05",
+  "publishDate": "2025-03-27 13:05",
   "category": "Knowledge",
   "author": "André Silva",
   "tags": ["online", "branding", "SEO"],
