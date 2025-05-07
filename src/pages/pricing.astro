@@ -6,87 +6,108 @@ import PricingCard from "../components/sections/pricingCard.astro";
 
 const pricing = [
   {
-    name: "Basic",
-    price: "$790",
+    name: "STARTER PLAN",
+    price: {
+      setup: "$1,800",
+      monthly: "$120",
+    },
     popular: false,
+    subtitle: "For Small Businesses & Startups",
+    description:
+      "Get started with a sleek, mobile-friendly website designed to capture leads and improve your online presence.",
     features: [
-      "1 Landing Page",
-     
-      "Contact Form Integration",
-      "1 Revision",
-      "1 month of hosting",
-      "1 month of upkeep and support",
+      "3-Page Website",
+      "SEO Optimisation & Basic Keyword Research",
+      "Lead Capture Forms",
+      "Chat Widget (Basic)",
+      "Mobile-Friendly Website Design",
+      "Mobile App Management",
+      "Email Support",
     ],
     button: {
-      text: "Get Started",
-      link: "https://tidycal.com/silvandre/landing-page-booking-type",
+      text: "SIGN UP NOW",
+      link: "https://api.leadconnectorhq.com/widget/bookings/booking-type-1",
     },
   },
   {
-    name: "Pro",
+    name: "GROWTH PLAN",
     price: {
-      monthly: "$1690",
-      annual: "$16",
-      discount: "10%",
-      original: "starts at",
+      setup: "$3,500",
+      monthly: "$200",
     },
     popular: true,
+    subtitle: "For Scaling Businesses & Entrepreneurs",
+    description:
+      "Scale your business with advanced SEO, automation, and lead management tools to maximize conversions.",
     features: [
-      "Everything from the Basic Package",
-      "Up to 5 Pages",
-      "Custom Blog",
-      "2 Revisions",
-      "3 months of hosting",
-      "3 months of upkeep and support",
+      "5-Page Website",
+      "Everything in Starter, PLUS:",
+      "Advanced SEO & Content Strategy",
+      "CRM Integration for Lead Management",
+      "AI Chatbot & Automated Email Sequences",
+      "Conversion-Focused Website Design",
+      "Real-Time Analytics & Reporting",
+      "Priority Support",
     ],
     button: {
-      text: "Get Started",
-      link: "https://tidycal.com/silvandre/full-website-booking-type",
+      text: "SIGN UP NOW",
+      link: "https://api.leadconnectorhq.com/widget/bookings/booking-type-1",
     },
   },
   {
-    name: "Premium",
-    price: "Let's Talk",
+    name: "ELITE PLAN",
+    price: {
+      setup: "$4,700",
+      monthly: "$550",
+    },
     popular: false,
+    subtitle: "For High-Performing Brands & Enterprises",
+    description:
+      "Unlock full automation, premium customization, and enterprise-level solutions for high-growth businesses.",
     features: [
-      "Everything from the Pro Package",
-      "AI Integrations",
-      "Automation Workflows",
-      "Custom Development",
-      "6 months of hosting",
-      "6 months of upkeep and support",
+      "10+ Page Website",
+      "Everything in Growth, PLUS:",
+      "Full AI-Driven Automation & Smart Workflows",
+      "E-Commerce & Payment Integration",
+      "Custom Branding & UI/UX Enhancements",
+      "Multi-Platform Lead Generation",
+      "Dedicated Account Manager",
+      "24/7 VIP Support",
     ],
     button: {
-      text: "Get Started",
-      link: "https://tidycal.com/silvandre/custom-solution-booking-type",
+      text: "SIGN UP NOW",
+      link: "https://api.leadconnectorhq.com/widget/bookings/booking-type-1",
     },
   },
 ];
 
-const defaultDescription =
-  "Hinterland Web offers simple & predictable pricing. No Surprises.";
+const defaultDescription = "Flexible Plans Tailored to Your Business Needs";
 ---
 
-<Layout title="Our Honest Pricing" value="pricing" description={defaultDescription}>
+<Layout
+  title="Our Flexible Pricing Options"
+  value="pricing"
+  description={defaultDescription}
+>
   <Container
     class="px-[5%] text-heading-1 dark:text-tertiary py-16 md:py-24 lg:py-28 mt-18"
   >
     <Sectionhead>
       <h1
         slot="title"
-        class="text-6xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600 overflow-visible"
+        class="text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-primary via-30% to-green-600 overflow-visible"
       >
-        Our Prices
+        Our Flexible <br /> Pricing Options
       </h1>
       <p slot="desc" class="md:text-md text-xl">
-        We are currently in the process of updating our pricing. We will be offering more robust packages with more features and quality.
+        Flexible Plans Tailored to Your Business Needs
       </p>
     </Sectionhead>
 
-    <!-- <div
+    <div
       class="dark:text-tertiary grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-screen-lg mt-12"
     >
       {pricing.map((item) => <PricingCard plan={item} />)}
-    </div> -->
+    </div>
   </Container>
 </Layout>
