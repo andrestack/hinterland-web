@@ -9,16 +9,16 @@ export interface Project {
 }
 
 const projects: Project[] = [
-  // {
-  //   title: "Riviera Renovations",
-  //   description:
-  //     "A client looking for rebranding and a new website for their renovation business. I made full use of their gorgeous existing logo to create an appealing and modern website that rightfully represents the quality of their work",
-  //   image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/riviera.png`,
-  //   link: "https://www.rivierarenovations.com.au/",
-  //   technologies: ["Wix Studio"],
-  //   features: ["Responsive design", "SEO Optimized", "Onbrand Design"],
-  //   position: "center",
-  // },
+  {
+    title: "Riviera Renovations",
+    description:
+      "A client looking for rebranding and a new website for their renovation business. I made full use of their gorgeous existing logo to create an appealing and modern website that rightfully represents the quality of their work",
+    image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/riviera.png`,
+    link: "https://www.rivierarenovations.com.au/",
+    technologies: ["Wix Studio"],
+    features: ["Responsive design", "SEO Optimized", "Onbrand Design"],
+    position: "center",
+  },
   {
     title: "Aldeia Djembe Camp",
     description:
