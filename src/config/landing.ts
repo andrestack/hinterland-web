@@ -99,6 +99,20 @@ export const testimonials = [
       "Andre is fantastic to work with. Highly responsive in his communication and enthusiastic! He draws on his technical coding experience but also can design and has an eye for detail. Andre built a web-app for our business, he did so in good timing, great precision and the finished product was delivered above and beyond what we originally had envisioned!",
   },
   {
+    image: "/images/unclebearsking.jpg",
+    name: "Vicki Wood",
+    job: "unclebearskin productions, Cooroy",
+    review:
+      "It was great pleasure to work with Andre {Hinterland}.I am most grateful to him for reducing my stress levels as he simplified a process which previously seemed simply too hard.Thank you André.",
+  },
+  {
+    image: "/images/riviera-renovations-logo (1).png",
+    name: "Vicki Wood",
+    job: "Riviera Renovations, Peregian Springs",
+    review:
+      "Andre is wiz. His patience and direction is amazing, Thanks Hinterland Web.",
+  },
+  {
     image: "/images/bc-logo_qld.png",
     name: "Roger Peters",
     job: "Buckley's Chance, Pomona",
