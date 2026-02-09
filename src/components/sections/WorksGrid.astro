@@ -39,10 +39,10 @@ import Paragraph from "components/shared/Paragraph.astro";
         >
           <Works
             title={project?.title}
-            description={project?.description}
-            image={project?.image}
-            position={project?.position}
-            url={project?.link}
+            description={project.description ?? ""}
+            image={project.image ?? ""}
+            position={project.position ?? ""}
+            url={project.link ?? ""}
           />
         </div>
       ))
@@ -66,7 +66,11 @@ import Paragraph from "components/shared/Paragraph.astro";
       // Adding an event listener to each item to handle clicks
       item.addEventListener("click", () => {
         if (window.openModal) {
-          window.openModal(projects[index]);
+          // Ensure we deeply clone the project to prevent type incompatibility
+          const { position, ...rest } = projects[index];
+          // Convert position to a string if needed (adjust based on expected type)
+          const positionStr = typeof position === "string" ? position : String(position);
+          window.openModal({ ...rest, position: positionStr });
         }
       });
     });
