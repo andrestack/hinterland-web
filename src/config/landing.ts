@@ -99,18 +99,25 @@ export const testimonials = [
       "Andre is fantastic to work with. Highly responsive in his communication and enthusiastic! He draws on his technical coding experience but also can design and has an eye for detail. Andre built a web-app for our business, he did so in good timing, great precision and the finished product was delivered above and beyond what we originally had envisioned!",
   },
   {
-    image: "/images/unclebearskin.jpg",
-    name: "Vicki Wood",
-    job: "unclebearskin productions, Cooroy",
+    image: "/images/favicon-clark-imagery.jpg",
+    name: "Ryan C.",
+    job: "Clark Imagery, Sunshine Coast",
     review:
-      "It was great pleasure to work with Andre {Hinterland}.I am most grateful to him for reducing my stress levels as he simplified a process which previously seemed simply too hard.Thank you André.",
+      "Working with André at Hinterland Web was an awesome experience. Communication was clear, the process was smooth, and he delivered our clients website quickly and exactly how we wanted it. The site looks great and functions perfectly, definitely helps us present a more professional image online. Would highly recommend André to anyone looking for a reliable and talented web developer!",
   },
   {
-    image: "/images/riviera-renovations-logo (1).png",
-    name: "Michele Bonola",
-    job: "Riviera Renovations, Peregian Springs",
+    image: "/images/Vendee-Favicon-Icon.png",
+    name: "Amanda C.",
+    job: "Vendee Property Buyers, Sunshine Coast",
     review:
-      "Andre is wiz. His patience and direction is amazing, Thanks Hinterland Web.",
+      "Thanks for sorting out some SEO issues so promptly and efficiently, much appreciated and look forward to working with you again.",
+  },
+  {
+    image: "/images/favicon-anya.webp",
+    name: "Sherrie D.",
+    job: "Anya Skin & Beauty, Sunshine Coast",
+    review:
+      "Andre was terrific throughout the whole process of fixing my website and personalising it in the way I asked. Excellent communication, speedy outcome and talked me through any questions I had. Highly recommend Andre for any website work.",
   },
   {
     image: "/images/bc-logo_qld.png",
@@ -148,12 +155,5 @@ export const testimonials = [
     job: "ADC, Portugal",
     review:
       "André at Hinterland Web really understood what we were looking for. Our new website does a great job transmitting what our event is all about!",
-  },
-  {
-    image: "/images/truefittraining.png",
-    name: "Richard Salmon",
-    job: "True Fit Training, Sunshine Coast",
-    review:
-      "Had an amazing experience with André, super friendly and professional. Really happy with the end result and would highly recommend!",
   },
 ];
