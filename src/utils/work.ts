@@ -20,6 +20,26 @@ export const projects: Project[] = [
     position: "center",
   },
   {
+    title: "Suncoast Energy",
+    description:
+      "An established electrician business wanted a more modern take on their existing Worpress website. We created a bolder darker tone design that would enhance some of their work and give it the sense of high end and quality they where after.",
+    image: `/images/suncoast.png`,
+    link: "https://www.suncoastenergy.au/",
+    technologies: ["Wix Studio"],
+    features: ["Fully responsive", "Dynamic content", "Wix Studio CMS"],
+    position: "center",
+  },
+  {
+    title: "Alem",
+    description:
+      "This Berlin based agency helps businesses and solopreneurs navigate AI and its applications in their businesses. They wanted a simple but yet lively website and a blog that could transmit their core value: simplicity and clarity.",
+    image: `/images/alem.png`,
+    link: "https://www.alem.company/",
+    technologies: ["Wix Studio"],
+    features: ["FAQ", "Blog"],
+    position: "center",
+  },
+  {
     title: "Aldeia Djembe Camp",
     description:
       "The client needed a simple but yet effective landing page for a dance and drum retreat in Portugal that would provide all the relevant information to the website visitors. For now the registration process is handled by contact form and mail communication. Client as commissioned a custom registration form that will contain all payment instructions. ",
@@ -29,7 +49,7 @@ export const projects: Project[] = [
     features: ["Responsive design", "SEO Optimized", "Low Cost"],
     position: "left",
   },
-  
+
   {
     title: "True Fit Training",
     description:
@@ -56,7 +76,7 @@ export const projects: Project[] = [
     technologies: ["Nextjs", "MongoDB", "React Hook Form", "Tailwind CSS"],
     features: ["Custom Development", "Full Stack", "Database Integration"],
   },
-  
+
   {
     title: "Pomona & District Kindergarten",
     description:
@@ -88,5 +108,4 @@ export const projects: Project[] = [
     features: ["Responsive design", "SEO Optimized", "Low Cost"],
     position: "center",
   },
-  
 ];

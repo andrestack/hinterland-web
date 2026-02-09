@@ -151,7 +151,7 @@ export const Testimonial17Defaults: Testimonial17Props = {
       companyName: "",
       numberOfStars: 5,
     },
-    
+
     {
       testimonial:
         "André took the time to understand my vision and goals for my website, offering valuable insights and suggestions that enhanced my original ideas. His expertise in marketing strategies was evident, as he crafted a site that not only looks stunning but also effectively communicates my brand message and engages my target audience.",
