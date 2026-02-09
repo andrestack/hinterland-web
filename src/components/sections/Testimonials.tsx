@@ -93,6 +93,42 @@ export const Testimonial17Defaults: Testimonial17Props = {
     },
     {
       testimonial:
+        "Working with André at Hinterland Web was an awesome experience. Communication was clear, the process was smooth, and he delivered our clients website quickly and exactly how we wanted it. The site looks great and functions perfectly, definitely helps us present a more professional image online. Would highly recommend André to anyone looking for a reliable and talented web developer!",
+      avatar: {
+        src: "/images/favicon-clark-imagery.jpg",
+        alt: "Testimonial avatar 2",
+      },
+      name: "Ryan C.",
+      position: "",
+      companyName: "Clark Imagery, Sunshine Coast",
+      numberOfStars: 5,
+    },
+    {
+      testimonial:
+        "Thanks for sorting out some SEO issues so promptly and efficiently, much appreciated and look forward to working with you again.",
+      avatar: {
+        src: "/images/Vendee-Favicon-Icon.png",
+        alt: "Testimonial avatar 2",
+      },
+      name: "Amanda C.",
+      position: "",
+      companyName: "Vendee Property Buyers, Sunshine Coast",
+      numberOfStars: 5,
+    },
+    {
+      testimonial:
+        "Andre was terrific throughout the whole process of fixing my website and personalising it in the way I asked. Excellent communication, speedy outcome and talked me through any questions I had. Highly recommend Andre for any website work.",
+      avatar: {
+        src: "/images/favicon-anya.webp",
+        alt: "Testimonial avatar 2",
+      },
+      name: "Sherrie D.",
+      position: "",
+      companyName: "Anya Skin & Beauty, Sunshine Coast",
+      numberOfStars: 5,
+    },
+    {
+      testimonial:
         "Our band Buckley's Chance and myself had a great experience working with Andre of Hinterland Web. He was able to transform a couple of loose flyers and sheets into a website we love. Thank you!",
       avatar: {
         src: "/images/bc-logo_qld.png",

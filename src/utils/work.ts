@@ -29,35 +29,7 @@ export const projects: Project[] = [
     features: ["Responsive design", "SEO Optimized", "Low Cost"],
     position: "left",
   },
-  {
-    title: "Wayfaring",
-    description:
-      "Recruitment agency based in Melbourne that wanted a more modern and professional design update for their website.",
-    image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/screenshot-wayfaring.png`,
-    link: "https://wayfaring.hinterlandweb-folio.in/",
-    technologies: ["HTML", "CSS", "hosted on Hostinger"],
-    features: [
-      "Responsive Design",
-      "Fast Loading",
-      "SEO Optimized",
-      "Custom Logo Design",
-    ],
-    position: "center",
-  },
-  {
-    title: "Garden Gnome",
-    description:
-      "A simple 3 page Website for a local landscaping business. The website now provides all the necessary information for clients to make an informed decision when booking gardening services.",
-    image: `https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/garnden-gnome-hero.png`,
-    link: "https://gardengnome.hinterlandweb-folio.in/",
-    technologies: ["HTML", "CSS", "hosted on Hostinger"],
-    features: [
-      "Responsive Design",
-      "Fast Loading",
-      "SEO Optimized",
-      "Onbrand Design",
-    ],
-  },
+  
   {
     title: "True Fit Training",
     description:
@@ -84,23 +56,7 @@ export const projects: Project[] = [
     technologies: ["Nextjs", "MongoDB", "React Hook Form", "Tailwind CSS"],
     features: ["Custom Development", "Full Stack", "Database Integration"],
   },
-  {
-    title: "Automation Agency",
-    description:
-      "This is a work in progress for my agency. It is a full stack template for any SaaS or product website. It showcases some of the features we can integrate on a fully custom website.",
-    image:
-      "https://pub-72408206c0cf4600bc497ef0bdbc7c1a.r2.dev/saas-website.png",
-    link: "https://saas-template-puce.vercel.app/",
-    technologies: ["Nextjs", "Tailwind CSS", "Magic UI", "Deployed on Vercel"],
-    features: [
-      "Responsive Design",
-      "Micro Interactions",
-      "Animations",
-      "User Authentication",
-      "Blog",
-    ],
-    position: "center",
-  },
+  
   {
     title: "Pomona & District Kindergarten",
     description:
@@ -122,7 +78,6 @@ export const projects: Project[] = [
     ],
     position: "center",
   },
-
   {
     title: "Buckley's Chance",
     description:
@@ -133,13 +88,5 @@ export const projects: Project[] = [
     features: ["Responsive design", "SEO Optimized", "Low Cost"],
     position: "center",
   },
-  {
-    title: "Bear Cave Barber",
-    description:
-      "After buying the business from it previous owner, the client went through a complete rebranding of the business. My task was to create a simple but yet effective landing page, that provides all the relevant information about the barber shop, including products available and a link to Google Reviews.",
-    image: `https://pub-ed0f4b8b153c4c809b08926b1d61a25e.r2.dev/bearcavebarber-website-screenshot.png`,
-    link: "https://bearcavebarber.com.au",
-    technologies: ["HTML", "CSS", "hosted on Hostinger"],
-    features: ["Responsive design", "SEO Optimized", "Low Cost"],
-  },
+  
 ];
