@@ -50,7 +50,9 @@ type ListItem = (typeof ctaData.list)[number];
       >
         {ctaData.title}
       </h2>
-      <p class="mt-6 text-lg text-muted dark:text-muted-foreground dark:text-tertiary">
+      <p
+        class="mt-6 text-lg text-muted dark:text-muted-foreground dark:text-tertiary"
+      >
         {ctaData.description}
       </p>
       <dl class="mt-6 space-y-4 leading-7">
@@ -73,8 +75,25 @@ type ListItem = (typeof ctaData.list)[number];
       </dl>
       <div class="mt-8">
         <a
-          href="https://api.leadconnectorhq.com/widget/bookings/booking-type-1"
-          class="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-tertiary hover:text-primary focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2"
+          href="https://tidycal.com/silvandre/15-minute-meeting
+          class="
+          inline-flex
+          items-center
+          justify-center
+          rounded-md
+          bg-primary
+          px-6
+          py-3
+          text-sm
+          font-medium
+          text-white
+          transition-colors
+          hover:bg-tertiary
+          hover:text-primary
+          focus:outline-none
+          focus:ring-2
+          focus:ring-purple-400
+          focus:ring-offset-2"
         >
           Get Started
         </a>
@@ -83,7 +102,7 @@ type ListItem = (typeof ctaData.list)[number];
     <div
       class={cn(
         "rounded-xl overflow-hidden border border-primary/10 dark:border-white/10 lg:-m-4",
-        reverse ? "order-1" : "order-2"
+        reverse ? "order-1" : "order-2",
       )}
     >
       <div class="relative aspect-video">
