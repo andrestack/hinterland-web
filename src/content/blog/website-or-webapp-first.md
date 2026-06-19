@@ -77,7 +77,7 @@ Platforms like:
 
 They help you develop your app without touching a line of code. These tools are used to build MVPs and internal tools, and they're getting more powerful by the day.
 
-But let's be honest: there is quite the learning curve with any of these tools and is quite time consuming. Basically, ideal for those that have the time to learn them and are just starting to launch their business. And this is also when business like Hinterland Web come in handy. So, if you are keen to start a conversation about how we can help you with your app idea just book a [call](https://api.leadconnectorhq.com/widget/bookings/booking-type-1)
+But let's be honest: there is quite the learning curve with any of these tools and is quite time consuming. Basically, ideal for those that have the time to learn them and are just starting to launch their business. And this is also when business like Hinterland Web come in handy. So, if you are keen to start a conversation about how we can help you with your app idea just book a [call](https://calendar.app.google/C5NAcKBR4fxGT4Jr6)
 
 ## App Design and UX: What Really Matters?
 
